@@ -1,3 +1,4 @@
+---
 #------------------------------------------------------------
 # Values for this lesson.
 #------------------------------------------------------------
@@ -10,8 +11,7 @@
 carpentry: "dc"
 
 # Overall title for pages.
-title: "Project Organization and Management for Genomics"
-
+title: "Cloud SPAN - Project Organization and Management for Environmental Biology"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -61,7 +61,7 @@ collections:
   extras:
     output: true
     permalink: /:path/index.html
-    
+
 # Set the default layout for things in the episodes collection.
 defaults:
   - values:
