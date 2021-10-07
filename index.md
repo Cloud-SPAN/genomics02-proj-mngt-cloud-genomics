@@ -2,6 +2,7 @@
 layout: lesson
 root: .
 ---
+Evelyn is editing this file.
 
 Good data organization is the foundation of any research project. It not only sets you up well for an analysis, but it also makes it easier to come back to the project later and share with collaborators, including your most important collaborator - future you.
 
