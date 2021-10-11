@@ -86,4 +86,4 @@ exclude:
   - bin/
   - .Rproj.user/
 
-remote_theme: carpentries/carpentries-theme
+remote_theme: Cloud-SPAN/cloud-span-theme
