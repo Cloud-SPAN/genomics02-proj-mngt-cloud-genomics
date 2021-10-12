@@ -86,4 +86,7 @@ exclude:
   - bin/
   - .Rproj.user/
 
+# Turn off built-in syntax highlighting.
+highlighter: rouge
+
 remote_theme: Cloud-SPAN/cloud-span-theme
