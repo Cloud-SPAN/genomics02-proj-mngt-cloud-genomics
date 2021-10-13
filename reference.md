@@ -8,9 +8,6 @@ layout: reference
 accession
 :   a unique identifier assigned to each sequence or set of sequences
 
-BLAST
-:   The Basic Local Alignment Search Tool at NCBI that searches for similarities between known and unknown biomolecules like DNA
-
 categorical variable
 :   Variables can be classified as categorical (aka, qualitative) or quantitative (aka, numerical). Categorical variables take on a fixed number of values that are names or labels. 
 
