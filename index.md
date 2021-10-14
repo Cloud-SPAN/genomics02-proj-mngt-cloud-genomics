@@ -23,4 +23,4 @@ Throughout the analysis, we'll also generate files from the steps in the bioinfo
 >
 > This lesson is part of a course that uses data hosted on an Amazon Machine Instance (AMI). Workshop participants will be given information on how to log-in to the AMI during the course.
 > Information on preparing for the course is provided on the [Cloud-SPAN Genomics Course setup page](https://cloud-span.github.io/genomics01-intro/setup.html).
-> {: .prereq}
+{: .prereq}
