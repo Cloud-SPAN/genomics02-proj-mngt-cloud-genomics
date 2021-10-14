@@ -5,16 +5,20 @@ root: .
 ---
 ## Instructional Material
 
-All Software Carpentry and Data Carpentry instructional material is
+This instructional material is
 made available under the [Creative Commons Attribution
 license][cc-by-human]. The following is a human-readable summary of
 (and not a substitute for) the [full legal text of the CC BY 4.0
 license][cc-by-legal].
 
+The Cloud-SPAN Genomics course consists of materials derived from Data Carpentry's [Genomics Workshop](https://datacarpentry.org/genomics-workshop/). This material is not endorsed by [Data Carpentry](<https://datacarpentry.org>) or [the Carpentries](https://carpentries.org/) in general.
+
+Cloud-SPAN is a collaboration between the [University of York](https://www.york.ac.uk/) and [The Software Sustainability Institute](https://www.software.ac.uk/) funded by the [UKRI Innovation Scholars award](https://www.ukri.org/news/initiatives-boost-health-and-bioscience-skills-and-industry/). Project Reference: [MR/V038680/1](https://gtr.ukri.org/projects?ref=MR%2FV038680%2F1).
+
 You are free:
 
-* to **Share**---copy and redistribute the material in any medium or format
-* to **Adapt**---remix, transform, and build upon the material
+* to **Share** --- copy and redistribute the material in any medium or format
+* to **Adapt** --- remix, transform, and build upon the material
 
 for any purpose, even commercially.
 
@@ -23,19 +27,14 @@ license terms.
 
 Under the following terms:
 
-* **Attribution**---You must give appropriate credit (mentioning that
-  your work is derived from work that is Copyright © Software
-  Carpentry or Data Carpentry and, where practical, linking to
-  http://software-carpentry.org/ or https://datacarpentry.org), provide a [link to the
-  license][cc-by-human], and indicate if changes were made. You may do
-  so in any reasonable manner, but not in any way that suggests the
-  licensor endorses you or your use.
+* **Attribution** --- You must give appropriate credit (mentioning that your
+  work is derived from this project, providing a [link to it](https://github.com/Cloud-SPAN), providing a [link to the license][cc-by-human],
+  and indicating if changes were made). You may do so in any reasonable manner, but
+  not in any way that suggests the licensor endorses you or your use.
 
-**No additional restrictions**---You may not apply legal terms or
-technological measures that legally restrict others from doing
-anything the license permits.  With the understanding that:
-
-Notices:
+**No additional restrictions** --- You may not apply legal terms or
+  technological measures that legally restrict others from doing anything the
+  license permits. With the understanding that:
 
 * You do not have to comply with the license for elements of the
   material in the public domain or where your use is permitted by an
@@ -44,14 +43,13 @@ Notices:
   permissions necessary for your intended use. For example, other
   rights such as publicity, privacy, or moral rights may limit how you
   use the material.
-
+        
 ## Software
 
 Except where otherwise noted, the example programs and other software
-provided by Software Carpentry and Data Carpentry are made available under the
+provided in this lesson are made available under the
 [OSI][osi]-approved
 [MIT license][mit-license].
->>>>>>> template/gh-pages
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
