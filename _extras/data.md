@@ -5,7 +5,7 @@ title: Data
 
 # Features of the dataset  
 
-This dataset was selected for our exercise on NGS Data Carpentry for several reasons, including:
+This dataset was selected for our exercise for several reasons, including:
 
 * Simple, but iconic NGS-problem: Examine a population where we want to characterize changes in sequence *a priori*   
 * Dataset publicly available - in this case through the NCBI Sequence Read Archive (http://www.ncbi.nlm.nih.gov/sra)  
