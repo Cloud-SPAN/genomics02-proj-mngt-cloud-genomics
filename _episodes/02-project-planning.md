@@ -38,12 +38,9 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 # Sending samples to the facility
 
 The first step in sending your sample for sequencing will be to complete a form documenting the metadata for the
-facility. Take a look at the following example submission spreadsheet.
+facility. Take a look at the following example submission spreadsheet, which is a Google Sheets document.
 
-[Sample submission sheet](../files/sample_submission.txt)
-
-Download the file using right-click (PC)/command-click (Mac). This is a tab-delimited text file. Try opening it
-with Excel or another spreadsheet program.
+[Sample submission sheet](https://docs.google.com/spreadsheets/d/1rHHpzQTuJFuybdhO0c40K6nKE6Hal-QB2ioMEQH3L3k/edit?usp=sharing)
 
 > ## Exercise
 >
@@ -77,11 +74,9 @@ with Excel or another spreadsheet program.
 # Retrieving sample sequencing data from the facility
 
 When the data come back from the sequencing facility, you will receive some documentation (metadata) as well as
-the sequence files themselves. Download and examine the following example file - here provided as a text file and
-Excel file:
+the sequence files themselves. Take a look at this Google Sheets file:
 
-- [Sequencing results - text](../files/sequencing_results_metadata.txt)
-- [Sequencing results - Excel](../files/sequencing_results_metadata.xls)
+- [Sequencing results metadata](https://docs.google.com/spreadsheets/d/1IyNShMHu0IDbwij4ZdcXtOh5_V53KBcwu1i70Dfaa3g/edit?usp=sharing)
 
 > ## Exercise
 >
