@@ -105,7 +105,7 @@ The raw data you get back from the sequencing center is the foundation of your s
 
 - Store the data in a place that is accessible by you and other members of your lab. At a minimum, you and the head of your lab should have access.
 - Store the data in a place that is redundantly backed up. It should be backed up in two locations that are in different physical areas.
-- Leave the raw data raw. You will be working with this data, but you do not want to modify this stored copy of the original data. If you modify the data, you'll never be able to access those original files.
+- Leave the raw data raw. You will be working with this data, but you do not want to modify this stored copy of the original data. If you modify the data, you'll never be able to access those original files. We will cover how to avoid accidentally changing files in a later lesson in this workshop: [(see File Permissions)](https://cloud-span.github.io/genomics04-data-preparation-organisation/01-writing-scripts/#file-permissions).
 
 #### Some data storage solutions
 
