@@ -105,7 +105,7 @@ The raw data you get back from the sequencing center is the foundation of your s
 
 - Store the data in a place that is accessible by you and other members of your lab. At a minimum, you and the head of your lab should have access.
 - Store the data in a place that is redundantly backed up. It should be backed up in two locations that are in different physical areas.
-- Leave the raw data raw. You will be working with this data, but you do not want to modify this stored copy of the original data. If you modify the data, you'll never be able to access those original files. We will cover how to avoid accidentally changing files in a later lesson in this workshop [(see File Permissions)](https://datacarpentry.org/shell-genomics/03-working-with-files/#file-permissions).
+- Leave the raw data raw. You will be working with this data, but you do not want to modify this stored copy of the original data. If you modify the data, you'll never be able to access those original files.
 
 #### Some data storage solutions
 
@@ -120,7 +120,7 @@ You can also use resources like [Amazon S3](https://aws.amazon.com/s3/),  [Micro
 Before analysis of data has begun, there are already many potential areas for errors and omissions. Keeping
 organized and keeping a critical eye can help catch mistakes.
 
-One of Data Carpentry's goals is to help you achieve *competency* in working with bioinformatics. This means that
+One of the goals of this course is to help you achieve *competency* in working with bioinformatics. This means that
 you can accomplish routine tasks, under normal conditions, in an acceptable amount of time. While an expert might
 be able to get to a solution on instinct alone - taking your time, using Google or another Internet search engine,
 and asking for help are all valid ways of solving your problems. As you complete the lessons you'll be able to use all of those methods more efficiently.  
