@@ -78,6 +78,8 @@ operating system, but sometimes requires additional software.
 
 ## Logging onto a cloud instance
 
+{% comment %}
+
 **Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> AWS_UNIX </option><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option></select>**
 
 
@@ -115,21 +117,30 @@ You should now be connected!
 
 <div id="div_aws_unix" style="display:block" markdown="1">
 
+{% endcomment %}
 
-#### Connecting using Mac/Linux
+#### Connecting from Mac/Linux/Windows using a *Terminal*
 
-Mac and Linux operating systems will already have terminals installed. 
+Mac and Linux operating systems will already have terminals installed. Users of Windows operating system  should already have installed Git Bash, which is a terminal like those in Mac and Linux. (If you have not installed Git Bash, you can follow the [Setup]({{relative_root_path}}/setup) instructions.
 
 1. Open the terminal
 
-    Simply search for 'Terminal' and/or look for the terminal icon
+    Simply search for 'Terminal' or look for the terminal icon and click on it:
 
-    ![terminal icon](../fig/terminal.png)
+    {% comment %}  ![Git Bash terminal icon](../fig/icon-git-bash2.png) {% endcomment %}
+
+    This is the Git Bash terminal icon (Windows users):   
+
+    <img src="../fig/icon-git-bash2.png" alt="GIT BASH terminal" width="50"/> 
+
+    The terminal icon in Mac and Linux will look like the following:
+    
+    <img src="../fig/icon-mac-terminal.png" alt="Mac terminal" width="50"/><img src="../fig/icon-linux-terminal.png" alt="Linux terminal" width="50"/> 
 
 2. Type the following command substituting `ip_address` by the IP address your instructor will provide (or the IP address of an instance you have provisioned yourself)
 
     ~~~
-    $ ssh dcuser@ip_address
+    $ ssh csuser@ip_address
     ~~~
     {: .bash}
 
@@ -145,13 +156,16 @@ Mac and Linux operating systems will already have terminals installed.
     {: .bash}
 
 4. Type `yes` to proceed
+
 5. In the final step, you will be asked to provide a login and password
     
     **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. `****`) or moving cursors. Just continue typing.
 
 You should now be connected!
 
+{% comment %}
 </div>
+{% endcomment %}
 
 ## Logging off a cloud instance
 
