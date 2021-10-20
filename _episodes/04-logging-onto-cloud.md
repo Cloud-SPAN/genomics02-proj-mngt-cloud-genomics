@@ -121,7 +121,7 @@ You should now be connected!
 
 #### Connecting from Mac/Linux/Windows using a *Terminal*
 
-Mac and Linux operating systems will already have terminals installed. Users of Windows operating system  should already have installed Git Bash, which is a terminal like those in Mac and Linux. (If you have not installed Git Bash, you can follow the [Setup]({{relative_root_path}}/setup) instructions.
+Mac and Linux operating systems will already have terminals installed. Users of Windows operating system  should already have installed Git Bash, which is a terminal like those in Mac and Linux. (If you have not installed Git Bash, you can follow the [Setup](../setup) instructions.)
 
 1. Open the terminal
 
