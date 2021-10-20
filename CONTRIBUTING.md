@@ -1,171 +1,132 @@
-# Contributing
+# Cloud-SPAN Contribution Guide
+Hi there! Are you interested in contributing content to the Cloud-SPAN project? 
 
-[Software Carpentry][swc-site] and [Data Carpentry][dc-site] are open source projects,
-and we welcome contributions of all kinds:
-new lessons,
-fixes to existing material,
-bug reports,
-and reviews of proposed changes are all welcome.
+You're in the right place!
 
-## Contributor Agreement
+## Joining the Community
+We welcome all contributions, big or small, and we'd love to welcome you into our community. 
+We are open to people of all backgrounds with an interest in 'omics and/or cloud computing.
 
-By contributing,
-you agree that we may redistribute your work under [our license](LICENSE.md).
-In exchange,
-we will address your issues and/or assess your change proposal as promptly as we can,
-and help you become a member of our community.
-Everyone involved in [Software Carpentry][swc-site] and [Data Carpentry][dc-site]
-agrees to abide by our [code of conduct](CONDUCT.md).
+Please be aware of our [Code of Conduct]("https://github.com/Cloud-SPAN/CloudSPAN-handbook-bookdown/blob/master/CODE_OF_CONDUCT.md") which must be respected at all times during Cloud-SPAN events, courses and online interactions.
 
-## How to Contribute
+## Cloud-SPAN Course Structure
+If you're thinking of making a contribution, it will be useful for you to understand how we structure our courses and repositories.
 
-The easiest way to get started is to file an issue
-to tell us about a spelling mistake,
-some awkward wording,
-or a factual error.
-This is a good way to introduce yourself
-and to meet some of our community members.
+- Each course is divided into several "lessons". Each lesson contains several "episodes".
+- Each lesson gets its own repository, which is named using the format **course-name** + **number** + **lesson-name**. For example, the first lesson of our Genomics course (*Project Management for Cloud Genomics*) is named **genomics02-proj-mngt-cloud-genomics**.
+    - Be aware that repo-01 of each course is reserved for the course introduction/overview.
+    - This means that the first lesson of each course is labelled as 02, the second as 03 and so on.
+- Each lesson has a homepage which contains introductory information and an overview of the topics included.This page is stored under the name **"index.md"**.
+- Episodes are stored as markdown files inside the relevant lesson repository under a folder named **"_episodes"**.
+    - These episodes are numbered conventionally such that episode-01 corresponds to the first episode of that lesson, episode-02 to the second and so on.
 
-1.  If you do not have a [GitHub][github] account,
-    you can [send us comments by email][contact].
-    However,
-    we will be able to respond more quickly if you use one of the other methods described below.
+## Contributing via GitHub 
 
-2.  If you have a [GitHub][github] account,
-    or are willing to [create one][github-join],
-    but do not know how to use Git,
-    you can report problems or suggest improvements by [creating an issue][issues].
-    This allows us to assign the item to someone
-    and to respond to it in a threaded discussion.
+[Git](https://git-scm.com) is a really useful tool for version control. 
+[GitHub](https://github.com) sits on top of Git and supports collaborative and distributed working.
 
-3.  If you are comfortable with Git,
-    and would like to add or change material,
-    you can submit a pull request (PR).
-    Instructions for doing this are [included below](#using-github).
+We know that it can be daunting to start using Git and GitHub if you haven't worked with them in the past, but our maintainers are here to help you figure out any of the jargon or confusing instructions you encounter! :heart:
 
-## Where to Contribute
+In order to contribute via GitHub, you'll need to set up a free account and sign in.
+Here are some [instructions](https://help.github.com/articles/signing-up-for-a-new-github-account/) to help you get going.
+Remember that you can ask us any questions you need to along the way.
 
-1.  If you wish to change this lesson,
-    please work in <https://github.com/datacarpentry/organization-genomics>,
-    which can be viewed at <https://datacarpentry.github.io/organization-genomics>.
+## Writing in Markdown
 
-2.  If you wish to change the example lesson,
-    please work in <https://github.com/carpentries/lesson-example>,
-    which documents the format of our lessons
-    and can be viewed at <https://carpentries.github.io/lesson-example>.
+GitHub has a helpful page on [getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github).
 
-3.  If you wish to change the template used for workshop websites,
-    please work in <https://github.com/carpentries/workshop-template>.
-    The home page of that repository explains how to set up workshop websites,
-    while the extra pages in <https://carpentries.github.io/workshop-template>
-    provide more background on our design choices.
+Most of the writing that you'll do will be in [Markdown](https://daringfireball.net/projects/markdown).
+You can think of Markdown as a few little symbols around your text that will allow GitHub to render the text with a little bit of formatting.
+For example, you could write words as **bold** (`**bold**`), or in _italics_ (`_italics_`), or as a [link](https://youtu.be/dQw4w9WgXcQ) (`[link](https://youtu.be/dQw4w9WgXcQ)`) to another webpage.
 
-4.  If you wish to change CSS style files, tools,
-    or HTML boilerplate for lessons or workshops stored in `_includes` or `_layouts`,
-    please work in <https://github.com/carpentries/styles>.
+Also, when writing in Markdown please start each new sentence on a new line.
+Having each sentence on a new line will make no difference to how the text is displayed- there will still be paragraphs- but it makes the [diffs produced during the pull request](https://help.github.com/en/articles/about-comparing-branches-in-pull-requests) review easier to read! :sparkles:
 
-## What to Contribute
+## Share your thoughts
+Whether you have something to contribute, a question to ask or a suggestion to make, the first thing you should do is open an issue. 
+This keeps us up to date with any changes you're thinking about and helps prevent unnecessary conflict between versions.
 
-There are many ways to contribute,
-from writing new exercises and improving existing ones
-to updating or filling in the documentation
-and submitting [bug reports][issues]
-about things that don't work, aren't clear, or are missing.
-If you are looking for ideas,
-please see [the list of issues for this repository][issues],
-or the issues for [Data Carpentry][dc-issues]
-and [Software Carpentry][swc-issues] projects.
+Please try and open your issue in the repository associated with the lesson or episode you want to contribute to. 
+(You are currently in **genomics02-proj-mngt-cloud-genomics**).
+If your issue spans several lessons, or is more general, then just use your judgement. 
+Our maintainers will sort you out if you get it wrong!
 
-Comments on issues and reviews of pull requests are just as welcome:
-we are smarter together than we are on our own.
-Reviews from novices and newcomers are particularly valuable:
-it's easy for people who have been using these lessons for a while
-to forget how impenetrable some of this material can be,
-so fresh eyes are always welcome.
+You should also check existing open issues to make sure you're not duplicating someone else's work.
 
-## What *Not* to Contribute
+## Submitting a pull request
+The following steps are a guide to help you contribute in a way that will be easy for everyone to review and accept with ease :sunglasses:.
 
-Our lessons already contain more material than we can cover in a typical workshop,
-so we are usually *not* looking for more concepts or tools to add to them.
-As a rule,
-if you want to introduce a new idea,
-you must (a) estimate how long it will take to teach
-and (b) explain what you would take out to make room for it.
-The first encourages contributors to be honest about requirements;
-the second, to think hard about priorities.
+### 1. Comment on an existing issue or open a new issue referencing your addition
 
-We are also not looking for exercises or other material that only run on one platform.
-Our workshops typically contain a mixture of Windows, Mac OS X, and Linux users;
-in order to be usable,
-our lessons must run equally well on all three.
+This allows other members of the Cloud-SPAN team to confirm that you aren't overlapping with work that's currently underway and that everyone is on the same page with the goal of the work you're going to carry out.
 
-## Using GitHub
+[This blog](https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/) is a nice explanation of why putting this work in upfront is so useful to everyone involved.
 
-If you choose to contribute via GitHub,
-you may want to look at
-[How to Contribute to an Open Source Project on GitHub][how-contribute].
-In brief:
+### 2. [Fork](https://help.github.com/articles/fork-a-repo) the relevant repo
 
-1.  The published copy of the lesson is in the `gh-pages` branch of the repository
-    (so that GitHub will regenerate it automatically).
-    Please create all branches from that,
-    and merge the [master repository][repo]'s `gh-pages` branch into your `gh-pages` branch
-    before starting work.
-    Please do *not* work directly in your `gh-pages` branch,
-    since that will make it difficult for you to work on other contributions.
+This is now your own unique copy of that repo.
+Changes here won't affect anyone else's work, so it's a safe space to explore edits to the code!
 
-2.  We use [GitHub flow][github-flow] to manage changes:
-    1.  Create a new branch in your desktop copy of this repository for each significant change.
-    2.  Commit the change in that branch.
-    3.  Push that branch to your fork of this repository on GitHub.
-    4.  Submit a pull request from that branch to the [master repository][repo].
-    5.  If you receive feedback,
-        make changes on your desktop and push to your branch on GitHub:
-        the pull request will update automatically.
+Make sure to [keep your fork up to date](https://help.github.com/articles/syncing-a-fork) with the master repository, otherwise, you can end up with lots of dreaded [merge conflicts](https://help.github.com/articles/about-merge-conflicts).
+If you prefer working in the browser, [these instructions](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser) describe how to sync your fork to the original repository via GitHub.
 
-Each lesson has two maintainers who review issues and pull requests
-or encourage others to do so.
-The maintainers are community volunteers,
-and have final say over what gets merged into the lesson.
+### 3. Make the changes you've discussed
 
-## Issues Labels
+Try to keep the changes focused.
+If you submit a large amount of work all in one go it will be much more work for whoever is reviewing your pull request.
+Help them help you. :wink:
 
-What issue labels in this repository mean? Think if you can assign one of the below labels to your issue.
-This will help maintainers to decide how to act and should result in quicker response to the issues.
-If you don't assign the label to an issue, it will be assigned by the maintainers.
+While making your changes, commit often and write good, detailed commit messages.
+[This blog](https://chris.beams.io/posts/git-commit/) explains how to write a good Git commit message and why it matters.
+It is also perfectly fine to have a lot of commits - including ones that break code.
+A good rule of thumb is to push up to GitHub when you _do_ have passing tests then the continuous integration (CI) has a good chance of passing everything. ????
 
-- **duplicate**  means there is another issue reporting the same problem
-- **enhancement** improvement to the existing content
-- **help wanted** maintainers invite contributors to tackle this issue
-- **invalid** is not considered an issue by the maintainers
-- **missing content** e.g. missing learning objectives and key points
-- **non-working example**
-- **non-working exercise**
-- **question** is something to discuss with maintainers
-- **quickfix** small thing e.g. typos and broken links
-- **setup instructions**
-- **structural** e.g. content is in the wrong order
-- **unclear content** e.g. a concept is presented, but it’s not clear
-- **wontfix** this issue will not be fixed
+If you feel tempted to "branch out" then please make a [new branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository) and a new issue to go with it. [This blog](https://nvie.com/posts/a-successful-git-branching-model/) details the different Git branching models.
 
-## Other Resources
+Please do not re-write history!
+That is, please do not use the [rebase](https://help.github.com/en/articles/about-git-rebase) command to edit previous commit messages, combine multiple commits into one, or delete or revert commits that are no longer necessary.
 
-General discussion of [Software Carpentry][swc-site] and [Data Carpentry][dc-site]
-happens on the [discussion mailing list][discuss-list],
-which everyone is welcome to join.
-You can also [reach us by email][contact].
+Are you new to Git and GitHub or just want a detailed guide on getting started with version control? Check out the [Version Control chapter](https://the-turing-way.netlify.com/version_control/version_control.html) in _The Turing Way_ Book!
 
-[contact]: mailto:admin@software-carpentry.org
-[dc-issues]: https://github.com/issues?q=user%3Adatacarpentry
-[dc-lessons]: http://datacarpentry.org/lessons/
-[dc-site]: http://datacarpentry.org/
-[discuss-list]: http://lists.software-carpentry.org/listinfo/discuss
-[github]: http://github.com
-[github-flow]: https://guides.github.com/introduction/flow/
-[github-join]: https://github.com/join
-[how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
-[issues]: https://github.com/datacarpentry/organization-genomics/issues/
-[repo]: https://github.com/datacarpentry/organization-genomics
-[swc-issues]: https://github.com/issues?q=user%3Aswcarpentry
-[swc-lessons]: http://software-carpentry.org/lessons/
-[swc-site]: http://software-carpentry.org/
+### 4. Submit a [pull request](https://help.github.com/articles/creating-a-pull-request)
+
+We encourage you to open a pull request as early in your contributing process as possible.
+This allows everyone to see what is currently being worked on.
+It also provides you, the contributor, feedback in real-time from both the community and the continuous integration as you make commits (which will help prevent stuff from breaking).
+
+When you are ready to submit a pull request, you will be asked to provide a title and description. The clearer your title and description are, the faster your request will be approved.
+- Describe the problem you're trying to fix in the pull request, reference any related issue and use fixes/close to automatically close them, if pertinent.
+- Include a list of changes proposed in the pull request.
+
+If you have opened the pull request early and know that its contents are not ready for review or to be merged, add "[WIP]" at the start of the pull request title, which stands for "Work in Progress".
+When you are happy with it and are happy for it to be merged into the main repository, change the "[WIP]" in the title of the pull request to "[Ready for review]".
+
+A member of Cloud-SPAN team will then review your changes to confirm that they can be merged into the main repository.
+A [review](https://help.github.com/articles/about-pull-request-reviews) will probably consist of a few questions to help clarify the work you've done.
+Keep an eye on your GitHub notifications and be prepared to join in that conversation.
+
+You can update your [fork](https://help.github.com/articles/fork-a-repo) of the repo and the pull request will automatically update with those changes.
+You don't need to submit a new pull request when you make a change in response to a review.
+
+GitHub has a [nice introduction](https://guides.github.com/introduction/flow) to the pull request workflow, but please get in touch if you have any questions :balloon:.
+
+## Recognising Contributions
+
+We welcome and recognise all kinds of contributions, from reporting/fixing bugs, to developing documentation, asking questions, answering questions, or suggesting new examples.
+Cloud-SPAN follows the [all-contributors](https://github.com/kentcdodds/all-contributors#emoji-key) specifications.
+The all-contributors bot usage is described [here](https://allcontributors.org/docs/en/bot/usage).
+
+The Cloud-SPAN project is split across multiple repos, so we use the [Cloud-SPAN-handbook](https://github.com/Cloud-SPAN/CloudSPAN-handbook) as our community hub.
+Regardless of which repo/lesson you have contributed to, we invite you to add yourself as a contributor here.
+To add yourself or someone else as a contributor, comment on the 'add contributor' issue in this repo with the following:
+
+```
+@all-contributors please add <username> for <contributions>
+```
+
+You can see the [Emoji Key (Contribution Types Reference)](https://allcontributors.org/docs/en/emoji-key) for a list of valid `<contribution>` types.
+The bot will then create a Pull Request to add the contributor and reply with the pull request details.
+
+---
+
+These guidelines have been adapted from the [Contributing Guidelines](https://raw.githubusercontent.com/alan-turing-institute/the-turing-way/master/CONTRIBUTING.md) of the [Turing Way](https://github.com/alan-turing-institute/the-turing-way)
