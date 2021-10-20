@@ -177,6 +177,3 @@ reload pages, or wait for pictures to load. When you're working in cloud, that m
 be suddenly disconnected from your instance when you weren't expecting it. Even on the best internet
 connections, your signal will occasionally drop, so it's good to know the above SSH steps, and be able
 to log into AWS without looking up the instructions each time.
-
-In the next section, we'll also show you some programs that you can use to keep your processes going
-even if your connection drops. But for now, just practice logging on and off a few times.

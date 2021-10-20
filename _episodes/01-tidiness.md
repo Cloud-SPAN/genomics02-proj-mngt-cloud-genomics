@@ -19,7 +19,7 @@ keypoints:
 When we think about the data for a sequencing project, we often start by thinking about the sequencing data that we get back from the sequencing center, but just as important, if not more so, is the data you've generated about the sequences before it ever goes to the sequencing center. This is the data about the data, often called the metadata. Without the information about what you sequenced, the sequence data itself is useless.  
 
 > ## Discussion
-> With the person next to you, discuss:
+> On the jamboard, discuss:
 >
 > What kinds of data and information have you generated before you sent your DNA/RNA off for sequencing?
 >
@@ -89,7 +89,7 @@ analysis you want to do, you may even separate the genus and species names into 
 [![Messy spreadsheet](../fig/01_tidiness_datasheet_example_messy.png)](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing)
 
 > ## Discussion
-> This is some potential spreadsheet data generated about a sequencing experiment. With the person next to you, for about 2 minutes, discuss some of the problems with the spreadsheet data shown above. You can look at the image, or view the spreadsheet on Google Sheets via this [link](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing).
+> This is some potential spreadsheet data generated about a sequencing experiment. Using the jamboard, for about 2 minutes, suggest some of the problems with the spreadsheet data shown above. You can look at the image, or view the spreadsheet on Google Sheets via this [link](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing).
 >
 >
 > > ## Solution
