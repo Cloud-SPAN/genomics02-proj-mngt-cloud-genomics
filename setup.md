@@ -2,8 +2,12 @@
 layout: page
 title: Setup
 ---
+{% comment %}
 
-This workshop is designed to be run on pre-imaged Amazon Web Services 
-(AWS) instances. For information about how to
-use the workshop materials, see the 
-[setup instructions](https://cloud-span.github.io/genomics01-intro/setup.html) on the main workshop page.
+Please, do not alter this file. The actual file setup.md you can edit is this:
+https://github.com/Cloud-SPAN/cloud-span-theme/_incluses/cs-common-content/setup.md
+
+The file is included here automatically through the include command below
+{% endcomment %}
+
+{% include cs-common-content/setup.md %}
