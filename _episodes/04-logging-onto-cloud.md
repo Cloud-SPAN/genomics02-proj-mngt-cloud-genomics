@@ -41,11 +41,9 @@ This lesson covers how to log into, and out of, an *already running* Amazon inst
 ## Background to AWS
 
 Setting up a new AWS instance requires a credit card, an AWS account, and up to
-a day of verification time, but you've already spent most of this workshop working in the cloud!
+a day of verification time.
 To save time, your instructor launched a remote computer (instance) for you prior
-to the workshop, and connected it to our lesson data. You've already logged into it at
-least once, but now that you're more comfortable with the command line, lets go back and talk about how it all works.
-
+to the workshop, and connected it to our lesson data. Lets talk about how it all works.
 
 We have a pre-configured copy of the data needed for this workshop that is always available
 to attach to a new instance on Amazon, as long as you have an account, and the log-in credentials to open it.
