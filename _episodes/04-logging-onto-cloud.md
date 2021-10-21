@@ -133,7 +133,7 @@ Mac and Linux operating systems will already have terminals installed. Users of 
     
     <img src="../fig/icon-mac-terminal.png" alt="Mac terminal" width="50"/><img src="../fig/icon-linux-terminal.png" alt="Linux terminal" width="50"/> 
 
-2. Type the following command substituting `ip_address` by the IP address your instructor will provide (or the IP address of an instance you have provisioned yourself)
+2. Type the following command substituting `ip_address` for the IP address your instructor will provide
 
     ~~~
     $ ssh csuser@ip_address
@@ -166,8 +166,8 @@ You should now be connected!
 ## Logging off a cloud instance
 
 Logging off your instance is a lot like logging out of your local computer: it stops any processes
-that are currently running, but doesn't shut the computer off. **AWS instances accrue charges whenever
-they are running, even if you are logged off**.
+that are currently running, but doesn't shut the computer off. **Be aware that AWS instances accrue charges whenever
+they are running, even if you are logged off**. Today, however, you do not need to worry about this.
 
 To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer:
 
@@ -181,7 +181,7 @@ Amandas-MacBook-Pro-3 $
 ## Logging back in
 
 Internet connections can be slow or unstable. If you're just browsing the internet, that means you have
-reload pages, or wait for pictures to load. When you're working in cloud, that means you'll sometimes
+reload pages, or wait for pictures to load. When you're working in the cloud, that means you'll sometimes
 be suddenly disconnected from your instance when you weren't expecting it. Even on the best internet
 connections, your signal will occasionally drop, so it's good to know the above SSH steps, and be able
 to log into AWS without looking up the instructions each time.
