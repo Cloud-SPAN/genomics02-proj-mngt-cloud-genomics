@@ -385,6 +385,11 @@ pwck      pwconv    pwd       pwdx      pwunconv
 
 Displays the name of every program that starts with `pw`.
 
+> ## Tip
+>
+> You might find it useful to keep a record (a bit like a dictionary or glossary) of the commands you learn in this course, so you can easily remember them in future. This will be faster than scrolling through the course each time you forget a command. While using the Cloud-SPAN AMI you can also type 'csguide' into the command prompt and hit enter for a text-based guide to the command line, including frequently used commands.
+{: .callout}
+
 ## Summary
 
 We now know how to move around our file system using the command line.
