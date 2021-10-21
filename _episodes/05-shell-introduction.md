@@ -50,50 +50,65 @@ In this lesson you will learn how to use the command line interface to move arou
 
 ## How to access the shell
 
-On a Mac or Linux machine, you can access a shell through a program called Terminal, which is already available
-on your computer. If you're using Windows, you'll need to download a separate program to access the shell.
+We have already accessed the shell in the previous episode, when we logged onto the Cloud instance.
 
 We will spend most of our time learning about the basics of the shell
 by manipulating some experimental data. Some of the data we're going to be working with is quite large, and
 we're also going to be using several bioinformatic packages in later
 lessons to work with this data. To avoid having to spend time
 downloading the data and downloading and installing all of the software,
-we're going to be working with data on a remote server.
-
-You can log-in to the remote server using the instructions
-[here](http://www.datacarpentry.org/cloud-genomics/02-logging-onto-cloud/#logging-onto-a-cloud-instance).
-Your instructor will supply the `ip_address` and password that you need to login.
-
-Each of you will have a different `ip_address`. This will
-prevent us from accidentally changing each other's files as we work through the
-exercises. The password will be the same for everyone.
+we're going to continue using our Cloud instance.
 
 After logging in, you will see a screen showing something like this:
 
 ~~~
-Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-84-generic x86_64)
 
- * Documentation:  https://help.ubuntu.com/
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
 
-  System information as of Sat Feb  2 00:08:17 UTC 2019
+  System information as of Thu 21 Oct 2021 10:47:55 AM UTC
 
-  System load: 0.0                Memory usage: 5%   Processes:       82
-  Usage of /:  29.9% of 98.30GB   Swap usage:   0%   Users logged in: 0
-
-  Graph this data and manage this system at:
-    https://landscape.canonical.com/
+  System load:  1.68               Processes:             189
+  Usage of /:   24.0% of 98.30GB   Users logged in:       0
+  Memory usage: 25%                IPv4 address for eth0: 10.0.32.254
+  Swap usage:   0%
 
   Get cloud support with Ubuntu Advantage Cloud Guest:
     http://www.ubuntu.com/business/services/cloud
 
-597 packages can be updated.
-444 updates are security updates.
+73 updates can be applied immediately.
+32 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
 
-New release '16.04.5 LTS' available.
-Run 'do-release-upgrade' to upgrade to it.
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+    _____________________________
+
+    W E L C O M E    T O    T H E
 
 
-Last login: Fri Feb  1 22:34:53 2019 from c-73-116-43-163.hsd1.ca.comcast.net
+     ____ _                 _         ______ _____   _    __   _
+    / ___| | ___  _   _  __| |       / ____ |  _  \ / \  |  \ | |
+   | |   | |/ _ \| | | |/ _` |  ___  \___  \| |_) '/ _ \ | \ \| |
+   | |___| | (_) | |_| | (_| | |___| ____)  |  __ / ___ \| |\ | |
+    \____|_|\___/ \___/ \__,_|       \_____/|_|  /_/   \_|_| \__|
+
+
+
+    F O U N D A T I O N     C O U R S E     E N V I R O N M E N T
+
+    _____________________________________________________________
+
+    Scroll up with the mouse for information before this welcome
+
+    Type "csguide" (and the Enter (↵) key) for some guidance
+    _____________________________________________________________
+
+
+
+Last login: Thu Oct 14 11:13:28 2021 from xxxxxxx
 ~~~
 {: .output}
 
