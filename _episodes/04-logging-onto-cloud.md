@@ -38,8 +38,6 @@ window.onload = set_page_view_defaults;
 
 This lesson covers how to log into, and out of, an *already running* Amazon instance.
 
-If you're returning post-workshop and want to launch your own instance, use [launching cloud instances on your own](../LaunchingInstances/)
-
 ## Background to AWS
 
 Setting up a new AWS instance requires a credit card, an AWS account, and up to
@@ -170,8 +168,8 @@ You should now be connected!
 ## Logging off a cloud instance
 
 Logging off your instance is a lot like logging out of your local computer: it stops any processes
-that are currently running, but doesn't shut the computer off. AWS instances acrue charges whenever
-they are running, *even if you are logged off*.
+that are currently running, but doesn't shut the computer off. **AWS instances acrue charges whenever
+they are running, even if you are logged off**.
 
 If you are *completely* done with your AWS instance, you will need to **terminate** it after you log off. Instructions for terminating an instance are here: [launching cloud instances on your own](../LaunchingInstances).
 
