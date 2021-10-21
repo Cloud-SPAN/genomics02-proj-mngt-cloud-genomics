@@ -166,10 +166,8 @@ You should now be connected!
 ## Logging off a cloud instance
 
 Logging off your instance is a lot like logging out of your local computer: it stops any processes
-that are currently running, but doesn't shut the computer off. **AWS instances acrue charges whenever
+that are currently running, but doesn't shut the computer off. **AWS instances accrue charges whenever
 they are running, even if you are logged off**.
-
-If you are *completely* done with your AWS instance, you will need to **terminate** it after you log off. Instructions for terminating an instance are here: [launching cloud instances on your own](../LaunchingInstances).
 
 To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer:
 
