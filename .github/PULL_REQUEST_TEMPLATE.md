@@ -1,9 +1,9 @@
 Please delete the text below before submitting your contribution. 
+----
 
----
+Thanks for contributing! Before submitting, please make sure you've read our [Contributing Guidelines](https://github.com/Cloud-SPAN/CloudSPAN-handbook/blob/main/CONTRIBUTING.md) and included some text to let us know what you're proposing:
+- Describe the problem you're trying to fix in the pull request, reference any related issue and use fixes/close to automatically close them, if pertinent.
+- Include a list of changes proposed in the pull request.
 
-Thanks for contributing! If this contribution is for instructor training, please send an email to checkout@carpentries.org with a link to this contribution so we can record your progress. You’ve completed your contribution step for instructor checkout just by submitting this contribution.  
+Thank you! ✨
 
-Please keep in mind that lesson maintainers are volunteers and it may be some time before they can respond to your contribution. Although not all contributions can be incorporated into the lesson materials, we appreciate your time and effort to improve the curriculum.  If you have any questions about the lesson maintenance process or would like to volunteer your time as a contribution reviewer, please contact Kate Hertweck (k8hertweck@gmail.com).  
-
----
