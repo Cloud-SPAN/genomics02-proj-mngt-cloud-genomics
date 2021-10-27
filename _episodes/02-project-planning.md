@@ -25,13 +25,11 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 > Before we go any further, here are some important questions to consider. If you are learning at a workshop,
 > please use the padlet to share your ideas.
 >
->
-> **Working with sequence data**
->
 > What challenges do you think you'll face (or have already faced) in working with a large sequence dataset?  
 > What is your strategy for saving and sharing your sequence files?  
 > How can you be sure that your raw data have not been unintentionally corrupted?  
-> Where/how will you (did you) analyze your data - what software, what computer(s)?  
+> Where/how will you (did you) analyze your data - what software, what computer(s)?
+
 {: .challenge}
 
 
@@ -55,14 +53,14 @@ facility. Take a look at the following example submission spreadsheet, which is 
 > > - Capitalization of the replicate column changes
 > > - Volume and concentration column headers have unusual (not allowed) characters
 > > - Volume, concentration, and RIN column decimal accuracy changes
-> > - The prep_date and ship_date formats are different, and prep_date has multiple formats 
+> > - The prep_date and ship_date formats are different, and prep_date has multiple formats
 > > - Are there others not mentioned?
 > >
 > > Improvements in naming
 > > - Shorten client_sample_id names, and maybe just call them "names"
 > >   - For example: "wt" for "wild-type". Also, they are all "1hr", so that is superfluous information
 > > - The prep_date and ship_date might not be needed
-> > - Use "microliters" for "Volume (µL)" etc. 
+> > - Use "microliters" for "Volume (µL)" etc.
 > >
 > > Errors hard to spot:
 > > - No space between "wild" and "type", repeated barcode numbers, missing data, duplicate names
@@ -92,7 +90,7 @@ the sequence files themselves. Take a look at this Google Sheets file:
 > > 2. To relate filenames use the sample_id, and do a VLOOKUP on submission sheet
 > > 3. The \_R1/\_R2 extensions mean "Read 1" and "Read 2" of each sample
 > > 4. The '.gz' extension means it is a compressed "gzip" type format to save disk space
-> > 5. The size of all the files combined is 1113.60 Gb (over a terabyte!). To transfer files this large you should validate the file size following transfer. Absolute file integrity checks following transfers and methods for faster file transfers are possible but beyond the scope of this lesson. 
+> > 5. The size of all the files combined is 1113.60 Gb (over a terabyte!). To transfer files this large you should validate the file size following transfer. Absolute file integrity checks following transfers and methods for faster file transfers are possible but beyond the scope of this lesson.
 > >
 > {: .solution}
 {: .challenge}
@@ -127,7 +125,7 @@ and asking for help are all valid ways of solving your problems. As you complete
 
 > ## Where to go from here?
 >
-> More reading about core competencies 
+> More reading about core competencies
 >
 >L. Welch, F. Lewitter, R. Schwartz, C. Brooksbank, P. Radivojac, B. Gaeta and M. Schneider, '[Bioinformatics Curriculum Guidelines: Toward a Definition of Core Competencies](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3945096/)', PLoS Comput Biol, vol. 10, no. 3, p. e1003496, 2014.
 >
