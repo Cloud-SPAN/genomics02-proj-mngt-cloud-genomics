@@ -23,7 +23,7 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 > ## Discussion
 >
 > Before we go any further, here are some important questions to consider. If you are learning at a workshop,
-> please discuss these questions with your neighbor.
+> please use the padlet to share your ideas.
 >
 >
 > **Working with sequence data**
@@ -43,7 +43,7 @@ facility. Take a look at the following example submission spreadsheet, which is 
 [Sample submission sheet](https://docs.google.com/spreadsheets/d/1rHHpzQTuJFuybdhO0c40K6nKE6Hal-QB2ioMEQH3L3k/edit?usp=sharing)
 
 > ## Exercise
->
+> Use the padlet to discuss:
 > 1. What are some errors you can spot in the data? Typos, missing data, inconsistencies?
 > 2. What improvements could be made to the choices in naming?
 > 3. What are some errors in the spreadsheet that would be difficult to spot? Is there any way you can test this?
@@ -79,7 +79,7 @@ the sequence files themselves. Take a look at this Google Sheets file:
 - [Sequencing results metadata](https://docs.google.com/spreadsheets/d/1IyNShMHu0IDbwij4ZdcXtOh5_V53KBcwu1i70Dfaa3g/edit?usp=sharing)
 
 > ## Exercise
->
+>Use the padlet to discuss:
 > 1. How are these samples organized?
 > 2. If you wanted to relate file names to the sample names submitted above (e.g. wild type...) could you do so?
 > 3. What do the \_R1/\_R2 extensions mean in the file names?
