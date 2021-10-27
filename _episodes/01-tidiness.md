@@ -81,8 +81,8 @@ The cardinal rules of using spreadsheet programs for data:
 - Put all your variables in columns - the thing that vary between samples, like ‘strain’ or ‘DNA-concentration’.
 - Have column names be explanatory, but without spaces. Use '-', '_' or [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of a space. For instance 'library-prep-method' or 'LibraryPrep'is better than 'library preparation method' or 'prep', because computers interpret spaces in particular ways.
 - Do not combine multiple pieces of information in one cell. Sometimes it just seems like one thing, but think if that’s the only way
-you’ll want to be able to use or sort that data. For example, instead of having a column with species and strain name (e.g. *E. coli* 
-K12) you would have one column with the species name (*E. coli*) and another with the strain name (K12). Depending on the type of 
+you’ll want to be able to use or sort that data. For example, instead of having a column with species and strain name (e.g. *E. coli*
+K12) you would have one column with the species name (*E. coli*) and another with the strain name (K12). Depending on the type of
 analysis you want to do, you may even separate the genus and species names into distinct columns.
 - Export the cleaned data to a text-based format like CSV (comma-separated values) format. This ensures that anyone can use the data, and is required by most data repositories.
 
@@ -95,7 +95,7 @@ analysis you want to do, you may even separate the genus and species names into 
 > > ## Solution
 > > A full set of types of issues with spreadsheet data is at the [Data Carpentry Ecology spreadsheet lesson](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/). Not all are present in this example. Discuss with the group what they found. Some problems include not all data sets having the same columns, datasets split into their own tables, color to encode information, different column names, spaces in some columns names. Here is a "clean" version of the same spreadsheet:
 > >
-> >[Cleaned spreadsheet](https://docs.google.com/spreadsheets/d/1Cv-f_nWX7A7U96l9__R4xfjq3GiQ2aIIKH5RU2yiHFw/edit?usp=sharing) 
+> >[Cleaned spreadsheet](https://docs.google.com/spreadsheets/d/1Cv-f_nWX7A7U96l9__R4xfjq3GiQ2aIIKH5RU2yiHFw/edit?usp=sharing)
 > {: .solution}
 {: .challenge}
 
@@ -105,6 +105,6 @@ Data organization at this point of your experiment will help facilitate your ana
 
 Fear not! If you have already started your project, and it's not set up this way, there are still opportunities to make updates. One of the biggest challenges is tabular data that is not formatted so computers can use it, or has inconsistencies that make it hard to analyze.
 
-More practice on how to structure data is outlined in the [Data Carpentry Ecology spreadsheet lesson](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/)
+
 
 Tools like [OpenRefine](http://www.datacarpentry.org/OpenRefine-ecology-lesson/) can help you clean your data.
