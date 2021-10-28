@@ -189,7 +189,7 @@ $ pwd
 {: .bash}
 
 ~~~
-/home/dcuser
+/home/csuser
 ~~~
 {: .output}
 
@@ -202,7 +202,7 @@ $ ls
 {: .bash}
 
 ~~~
-R  r_data  shell_data
+bin  shell_data  software  temp
 ~~~
 {: .output}
 
