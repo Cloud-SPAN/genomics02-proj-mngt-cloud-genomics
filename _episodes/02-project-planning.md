@@ -29,9 +29,7 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 > What is your strategy for saving and sharing your sequence files?  
 > How can you be sure that your raw data have not been unintentionally corrupted?  
 > Where/how will you (did you) analyze your data - what software, what computer(s)?
-
 {: .challenge}
-
 
 # Sending samples to the facility
 
@@ -111,7 +109,7 @@ If you have a local high performance computing center or data storage facility o
 
 If you do not have access to these resources, you can back up on hard drives. Have two backups, and keep the hard drives in different physical locations.
 
-You can also use resources like [Amazon S3](https://aws.amazon.com/s3/),  [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/),  [Google Cloud](https://cloud.google.com/storage/) or others for cloud storage. The [open science framework](https://osf.io) is a free option for storing files up to 5 GB. See more in the lesson ["Introduction to Cloud Computing for Genomics"](http://www.datacarpentry.org/cloud-genomics/04-which-cloud/).
+You can also use resources like [Amazon S3](https://aws.amazon.com/s3/),  [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/),  [Google Cloud](https://cloud.google.com/storage/) or others for cloud storage. The [open science framework](https://osf.io) is a free option for storing files up to 5 GB.
 
 # Summary
 
