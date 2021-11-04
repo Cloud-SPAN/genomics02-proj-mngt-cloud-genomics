@@ -153,12 +153,16 @@ Mac and Linux operating systems will already have terminals installed. Users of 
     ~~~
     {: .bash}
 
-4. Type `yes` to proceed
+4. Type `yes` to proceed, and after a few seconds you should see the prompt of your instance:
 
+    ~~~
+    csuser@instance05-gc-cloud-span:~ $
+    ~~~
+    {: .bash}
 
-You should now be connected!  
+If the prompt above appears, you are now connected!  
 
-You don't need to type a password as your are using a login-key file to authenticate your access to the instance.
+Note that you don't need to type a password to login to your instance, as your are using a login-key file to authenticate your access to the instance.
 
 {% comment %}
 </div>
