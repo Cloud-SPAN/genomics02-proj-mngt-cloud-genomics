@@ -133,10 +133,10 @@ Mac and Linux operating systems will already have terminals installed. Users of 
     
     <img src="../fig/icon-mac-terminal.png" alt="Mac terminal" width="50"/><img src="../fig/icon-linux-terminal.png" alt="Linux terminal" width="50"/> 
 
-2. Type the following command substituting `ip_address` for the IP address your instructor will provide
+2. Type the following command substituting `05` for the number in the name of your instance and login-key file you received from the Cloud-SPAN team.
 
     ~~~
-    $ ssh csuser@ip_address
+    $ ssh -i login-key-instance05.pem  csuser@instance05-gc-cloud-span.york.ac.uk
     ~~~
     {: .bash}
 
@@ -145,19 +145,20 @@ Mac and Linux operating systems will already have terminals installed. Users of 
 3. You will receive a security message that looks something like the message below
 
     ~~~
-    The authenticity of host 'ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)' can't be established.
-    ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI.
-    Are you sure you want to continue connecting (yes/no)?
+    Warning: Identity file login-key-instance05 not accessible: No such file or directory.
+    The authenticity of host 'instance05-gc-cloud-span.york.ac.uk (108.128.163.192)' can't be established.
+    ED25519 key fingerprint is SHA256:0BbxvVpzi+rPxBZrHxdXpHwggCacBJERHOkNObcac90.
+    This key is not known by any other names
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?
     ~~~
     {: .bash}
 
 4. Type `yes` to proceed
 
-5. In the final step, you will be asked to provide a login and password
-    
-    **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. `****`) or moving cursors. Just continue typing.
 
-You should now be connected!
+You should now be connected!  
+
+You don't need to type a password as your are using a login-key file to authenticate your access to the instance.
 
 {% comment %}
 </div>
@@ -172,7 +173,7 @@ they are running, even if you are logged off**. Today, however, you do not need 
 To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer:
 
 ~~~
-dcuser@ip-172-31-62-209 $ exit
+csuser@instance05-gc-cloud-span $ exit
 
 Amandas-MacBook-Pro-3 $
 ~~~
