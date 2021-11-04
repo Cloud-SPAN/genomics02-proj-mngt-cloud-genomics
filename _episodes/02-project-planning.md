@@ -29,9 +29,7 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 > What is your strategy for saving and sharing your sequence files?  
 > How can you be sure that your raw data have not been unintentionally corrupted?  
 > Where/how will you (did you) analyze your data - what software, what computer(s)?
-
 {: .challenge}
-
 
 # Sending samples to the facility
 
