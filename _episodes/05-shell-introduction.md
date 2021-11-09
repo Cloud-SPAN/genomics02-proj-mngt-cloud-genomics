@@ -180,7 +180,7 @@ i.e.,
 the directory that the computer assumes we want to run commands in,
 unless we explicitly specify something else.
 Here,
-the computer's response is `/home/dcuser`,
+the computer's response is `/home/csuser`,
 which is the top level directory within our cloud system:
 
 ~~~
@@ -202,7 +202,7 @@ $ ls
 {: .bash}
 
 ~~~
-bin  shell_data  software  temp
+bin  shell_data  software
 ~~~
 {: .output}
 
