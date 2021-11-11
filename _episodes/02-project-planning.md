@@ -3,7 +3,7 @@ title: "Planning for NGS Projects"
 teaching: 20
 exercises: 10
 questions:
-- "How do I plan and organize a genome sequencing project?"
+- "How do I plan and organise a genome sequencing project?"
 - "What information does a sequencing facility need?"
 - "What are the guidelines for data storage?"
 objectives:
@@ -18,7 +18,7 @@ There are a variety of ways to work with a large sequencing dataset. You may be 
 bioinformatics tools beyond doing BLAST searches. You may have bioinformatics experience with other types of data
 and are working with high-throughput (NGS) sequence data for the first time. In the most important ways, the
 methods and approaches we need in bioinformatics are the same ones we need at the bench or in the field -
-*planning, documenting, and organizing* are the key to good reproducible science.  
+*planning, documenting, and organising* are the key to good reproducible science.  
 
 > ## Discussion
 >
@@ -76,7 +76,7 @@ the sequence files themselves. Take a look at this Google Sheets file:
 
 > ## Exercise
 >Use the padlet to discuss:
-> 1. How are these samples organized?
+> 1. How are these samples organised?
 > 2. If you wanted to relate file names to the sample names submitted above (e.g. wild type...) could you do so?
 > 3. What do the \_R1/\_R2 extensions mean in the file names?
 > 4. What does the '.gz' extension on the filenames indicate?
@@ -84,7 +84,7 @@ the sequence files themselves. Take a look at this Google Sheets file:
 >
 > > ## Solution
 > >
-> > 1. Samples are organized by sample_id
+> > 1. Samples are organised by sample_id
 > > 2. To relate filenames use the sample_id, and do a VLOOKUP on submission sheet
 > > 3. The \_R1/\_R2 extensions mean "Read 1" and "Read 2" of each sample
 > > 4. The '.gz' extension means it is a compressed "gzip" type format to save disk space
@@ -105,7 +105,7 @@ The raw data you get back from the sequencing center is the foundation of your s
 
 #### Some data storage solutions
 
-If you have a local high performance computing center or data storage facility on your campus or with your organization, those are ideal locations. Get in touch with the people who support those facilities to ask for information.
+If you have a local high performance computing center or data storage facility on your campus or with your organisation, those are ideal locations. Get in touch with the people who support those facilities to ask for information.
 
 If you do not have access to these resources, you can back up on hard drives. Have two backups, and keep the hard drives in different physical locations.
 
@@ -114,7 +114,7 @@ You can also use resources like [Amazon S3](https://aws.amazon.com/s3/),  [Micro
 # Summary
 
 Before analysis of data has begun, there are already many potential areas for errors and omissions. Keeping
-organized and keeping a critical eye can help catch mistakes.
+organised and keeping a critical eye can help catch mistakes.
 
 One of the goals of this course is to help you achieve *competency* in working with bioinformatics. This means that
 you can accomplish routine tasks, under normal conditions, in an acceptable amount of time. While an expert might

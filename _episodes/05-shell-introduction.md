@@ -133,7 +133,7 @@ up until this point.
 
 The part of the operating system responsible for managing files and directories
 is called the **file system**.
-It organizes our data into files,
+It organises our data into files,
 which hold information,
 and directories (also called "folders"),
 which hold files or other directories.
@@ -193,7 +193,7 @@ $ pwd
 ~~~
 {: .output}
 
-Let's look at how our file system is organized. We can see what files and subdirectories are in this directory by running `ls`,
+Let's look at how our file system is organised. We can see what files and subdirectories are in this directory by running `ls`,
 which stands for "listing":
 
 ~~~
