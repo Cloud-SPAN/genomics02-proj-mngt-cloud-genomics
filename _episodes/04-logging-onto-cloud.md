@@ -1,7 +1,7 @@
 ---
 title: "Logging onto Cloud"
 teaching: 5
-exercises: 5
+exercises: 40
 questions:
 - How do I connect to an AWS instance?
 objectives:
