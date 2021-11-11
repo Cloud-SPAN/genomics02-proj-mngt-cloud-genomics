@@ -1,5 +1,5 @@
 ---
-title: "Logging onto Cloud"
+title: "Logging onto the Cloud"
 teaching: 5
 exercises: 40
 questions:
