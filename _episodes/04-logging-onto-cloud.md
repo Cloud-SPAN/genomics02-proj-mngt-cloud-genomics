@@ -354,9 +354,9 @@ Amanda-MacBook-Pro-3 $
 ~~~
 {: .bash}
 
-### V. Subsequent login's
+### V. Subsequent logins to your AWS instance
 
-To login back to your AWS instance, you only need to open a terminal, move to the directory you created for the course, and ssh as before:
+To login back to your instance, open a terminal, move to the directory you created for the course, and ssh as before:
 
 ~~~ 
 $ cd directory-you-created-the-first-time
