@@ -46,77 +46,23 @@ To save time, your instructor has launched an AWS instance for you prior to the 
 
 We have a pre-configured copy of the data and software analysis tools needed for this course that is always available to attach to a new AWS instance that is accessible to you as long as you have the log-in credentials to open it.
 
-To access your pre-configured AWS instance for this course, you'll need:
-- the name of your instance 
-- the file with the login key to access your instance
-- the **Terminal** application
-  - Terminal is readily available in MacOS and Linux computers.  
-  - **Windows** users should have already installed *Git Bash* which includes the Git Bash *Terminal*. If not, please follow the directions in the [Setup](../setup).
-- the *secure shell* (**ssh**) application 
-  - ssh is readily available in MacOS, Linux and Windows. **Windows** user need to use ssh through the Git Bash Terminal. 
-  - as the name implies, **ssh** provides you with a secure way to use a remote *shell*, which is just another name for the *Terminal* and the *command line interface*, or CLI!  
+To login into your AWS instance for this course, you'll need:
+- the name of your instance and a login key file, both of which you received via email
+- the shell/terminal application ---- **Windows users** should have already installed the *Git Bash* shell; otherwise follow the directions in the [Setup](../setup)
+- the *secure shell* (**ssh**) application, which is readily available in MacOS, Linux and Windows. **Windows users** will use ssh through Git Bash. 
 
-You will have received an email with the name of your AWS instance and the login key file. The name of your instance and of the login key file will be something like this:
+As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this:
 
-- **instanceNN-gc.cloud-span.aws.york.ac.uk**
-- **login-key-instanceNN.pem**
+ ~~~
+ $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.york.ac.uk
+ ~~~
+ {: .bash}
 
-where NN will be a number between 01 and 37. 
+A few seconds after you enter that command to the shell in your computer, you will be logged into your AWS instance and start using a (Linux) shell running in your instance.
 
-We need to prepare the login key file and make it accessible to ssh so that ssh can authenticate you to your AWS instance. Follow the steps below: 
+But before that, it is most convenient that, to keep things tidy and easily accessible, you first create a folder (or directory) to keep in there everything related to the course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
 
-
-{% comment %}
-
-## Connection Protocols
-
-We will use a protocol called Secure Shell (SSH) that, as the name implies, provides you
-with a secure way to use a [shell](http://swcarpentry.github.io/shell-novice). In our case,
-the shell will be running on a remote machine. This protocol is available for every
-operating system, but sometimes requires additional software.
-
-## Logging onto a cloud instance
-
-**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> AWS_UNIX </option><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option></select>**
-
-
-<div id="div_aws_win" style="display:block" markdown="1">
-
-#### Connecting using PC
-
-*Prerequisites*: You must have an SSH client. There are several free options but you should have installed [PuTTY.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) at the begining of the workshop, and we're going to continue using that.
-
-
-1. Open PuTTY
-2. Paste in the 'Host Name (or IP address)' section the IP address provided by your instructor (or the IP address of an instance you have provisioned yourself)
-
-    *Keep the default selection 'SSH' and Port (22)*
-
-    ![The location of the Host Name, Port, and Connection Type fields in the PuTTY Configuration](../fig/putty_screenshot_1.png)
-
-2. Click 'Open' 
-    
-    You will be presented with a security warning
-
-    ![Screenshot showing a security warning after opening a PuTTY session.](../fig/putty_screenshot_2.png)
-
-3. Select 'Yes' to continue to connect
-3. In the final step, you will be asked to provide a login and password
-    
-    **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. `****) or moving cursors. Just continue typing
-
-    ![Screenshot of a command line window demonstrating how to type passwords in Unix/Linux](../fig/putty_screenshot_3.png)
-
-You should now be connected!
-
-</div>
-
-
-<div id="div_aws_unix" style="display:block" markdown="1">
-
-{% endcomment %}
-
-### I. Open a Terminal and create a directory for the course
+## Open a Terminal and create a directory for the course
 
 1. **Open terminal** (or Git Bash terminal if you are a Windows user). 
 
@@ -124,11 +70,12 @@ You should now be connected!
 
     This is the Git Bash terminal icon (Windows users):   
 
-    <img src="../fig/icon-git-bash2.png" alt="GIT BASH terminal" width="50"/> 
+    <img src="../fig/gitbash-launch-icon.png" alt="GIT BASH terminal" width="50"/> 
 
-    The terminal icon in Mac and Linux will look like the following:
+    The terminal icon in Mac and Linux looks like the following:
     
-    <img src="../fig/icon-mac-terminal.png" alt="Mac terminal" width="50"/><img src="../fig/icon-linux-terminal.png" alt="Linux terminal" width="50"/> 
+    <img src="../fig/icon-mac-terminal.png" alt="Mac terminal" width="50"/>
+    <img src="../fig/icon-linux-terminal.png" alt="Linux terminal" width="50"/> 
 
     Once the terminal opens, it will display/output the **command prompt** to signal that it is ready to accept commands (instructions). The **command prompt** is 1 or 2 lines depending on your operating system (Windows, Linux, MacOS) and will be similar to the following.
 
@@ -140,7 +87,7 @@ You should now be connected!
     ~~~
     {: .output}
 
-    Obviously "username" and "machineid" in the Code box above will be different when you open a terminal and will correspond to the actual username and machine name you are using. 
+    Obviously "username" and "machineid" in the Code box above will be different when you open a terminal and will correspond to the actual username and the name of the machine you are using. 
 
     The character **$** is the typical ending of user prompts (the ending of admin users prompts is typically **#**). Commands you type will follow the **$**.
 
@@ -207,7 +154,7 @@ You should now be connected!
 
     Within your home directory you will find the typical directories like: Desktop, Documents Downloads, etc.
     
-    *\*\*\*It just helps to get things organised and accessible to sort them into directories.* So, for you to keep all the resources for this course in the same place ..
+    *\*\*\* As mentioned earlier, it just helps to get things organised and accessible to sort them into directories.* So,
 
 3. **Create a directory for the course and move to it**
 
@@ -245,7 +192,7 @@ You should now be connected!
     After you enter the command *cd cloudspan* (or *cd directoryyoucreated*), your **working directory will be** *cloudspan* or *directoryyoucreated*. 
 
 
-### II. Download and prepare the private key file to login to your AMI instance
+## Download and prepare your login key file to login into your instance
 
 1. **Download your login key file**
 
@@ -302,7 +249,7 @@ You should now be connected!
 
     The **chmod** command makes your login key file accessible only to you (and not-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
 
-### III. Login to your instance with ssh:
+## Login into your instance with ssh
 
 1. Copy and paste the following command to your terminal but replace `NN` with the number in your login key file name.
 
@@ -341,7 +288,7 @@ You should now be connected!
 </div>
 {% endcomment %}
 
-### IV. Logging off your cloud instance
+## Logging off your cloud instance
 
 Logging off your instance is a lot like logging out of your local computer but it doesn't shut the computer off. **Be aware that AWS instances accrue charges whenever they are running, even if you are logged off**. Today, however, you do not need to worry about this.
 
@@ -354,7 +301,7 @@ Amanda-MacBook-Pro-3 $
 ~~~
 {: .bash}
 
-### V. Subsequent logins to your AWS instance
+## Subsequent logins to your AWS instance
 
 To login back to your instance, open a terminal, move to the directory you created for the course, and ssh as before:
 
