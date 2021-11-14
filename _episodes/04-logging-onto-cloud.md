@@ -40,30 +40,33 @@ This lesson covers how to log into, and out of, an *already running* Amazon inst
 
 ## Background to AWS
 
-Setting up a new AWS instance requires a credit card, an AWS account, and up to
-a day of verification time.
-To save time, your instructor launched a remote computer (instance) for you prior
-to the workshop, and connected it to our lesson data. Lets talk about how it all works.
+An Amazon Web Services (AWS) instance is a **remote computer** that runs on AWS infrastructure and that is accessible from any laptop or desktop as described below. Setting up a new AWS instance requires a credit card, an AWS account, and up to a day of verification time. 
 
-We have a pre-configured copy of the data needed for this workshop that is always available
-to attach to a new instance on Amazon, as long as you have an account, and the log-in credentials to open it.
+To save time, your instructor has launched an AWS instance for you prior to the course, and connected it to our lesson data and software analysis tools. It all works as follows.
 
-To access the pre-configured workshop data, you'll need to use our log-in credentials (user name and password). These
-credentials will be supplied by your instructor.
+We have a pre-configured copy of the data and software analysis tools needed for this course that is always available to attach to a new AWS instance that is accessible to you as long as you have the log-in credentials to open it.
 
-But first, you need a place to log *into*! To find the instance that's attached to that data,
-you'll need something called an IP address. Your instructor should have given this to you
-at the beginning of the workshop.
+To access your pre-configured AWS instance for this course, you'll need:
+- the name of your instance 
+- the file with the login key to access your instance
+- the **Terminal** application
+  - Terminal is readily available in MacOS and Linux computers.  
+  - **Windows** users should have already installed *Git Bash* which includes the Git Bash *Terminal*. If not, please follow the directions in the [Setup](../setup).
+- the *secure shell* (**ssh**) application 
+  - ssh is readily available in MacOS, Linux and Windows. **Windows** user need to use ssh through the Git Bash Terminal. 
+  - as the name implies, **ssh** provides you with a secure way to use a remote *shell*, which is just another name for the *Terminal* and the *command line interface*, or CLI!  
 
-An IP address is essentially the numerical version of a web address like www.amazon.com
+You will have received an email with the name of your AWS instance and the login key file. The name of your instance and of the login key file will be something like this:
 
-Recall that cloud computing is about choice. You can rent just a single processor on a large computer
-for a small project, or you can rent hundreds of processors spread across multiple computers for
-a large project. In either case, once you rent the collection of processors, Amazon will
-present your rental to you as if it was a single computer. So, the physical computers that host your
-instances don't really move, *but* every time you launch a new instance, it will have a new IP address.
+- **instanceNN-gc.cloud-span.aws.york.ac.uk**
+- **login-key-instanceNN.pem**
 
-So, each time you launch a new instance, the *IP address* changes, but your *Log-in Credentials* don't have to.
+where NN will be a number between 01 and 37. 
+
+We need to prepare the login key file and make it accessible to ssh so that ssh can authenticate you to your AWS instance. Follow the steps below: 
+
+
+{% comment %}
 
 ## Connection Protocols
 
@@ -73,8 +76,6 @@ the shell will be running on a remote machine. This protocol is available for ev
 operating system, but sometimes requires additional software.
 
 ## Logging onto a cloud instance
-
-{% comment %}
 
 **Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> AWS_UNIX </option><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option></select>**
 
@@ -115,15 +116,11 @@ You should now be connected!
 
 {% endcomment %}
 
-#### Connecting from Mac/Linux/Windows using a *Terminal*
+### I. Open a Terminal and create a directory for the course
 
-Mac and Linux operating systems will already have terminals installed. Users of Windows operating system  should already have installed Git Bash, which is a terminal like those in Mac and Linux. (If you have not installed Git Bash, you can follow the [Setup](../setup) instructions.)
+1. **Open terminal** (or Git Bash terminal if you are a Windows user). 
 
-1. Open the terminal
-
-    Simply search for 'Terminal' or look for the terminal icon and click on it:
-
-    {% comment %}  ![Git Bash terminal icon](../fig/icon-git-bash2.png) {% endcomment %}
+    Search for 'Terminal' or look for the terminal icon and click (or double click) on it:
 
     This is the Git Bash terminal icon (Windows users):   
 
@@ -133,60 +130,236 @@ Mac and Linux operating systems will already have terminals installed. Users of 
     
     <img src="../fig/icon-mac-terminal.png" alt="Mac terminal" width="50"/><img src="../fig/icon-linux-terminal.png" alt="Linux terminal" width="50"/> 
 
-2. Type the following command substituting `05` for the number in the name of your instance and login-key file you received from the Cloud-SPAN team.
+    Once the terminal opens, it will display/output the **command prompt** to signal that it is ready to accept commands (instructions). The **command prompt** is 1 or 2 lines depending on your operating system (Windows, Linux, MacOS) and will be similar to the following.
+
+    Typical command prompt for Windows Git Bash users:
 
     ~~~
-    $ ssh -i login-key-instance05.pem  csuser@instance05-gc-cloud-span.york.ac.uk
+    username@machineid MINGW64 ~
+    $
+    ~~~
+    {: .output}
+
+    Obviously "username" and "machineid" in the Code box above will be different when you open a terminal and will correspond to the actual username and machine name you are using. 
+
+    The character **$** is the typical ending of user prompts (the ending of admin users prompts is typically **#**). Commands you type will follow the **$**.
+
+    Typical command prompt for Linux users:
+
+    ~~~
+    username@machineid:~ $
+    ~~~
+    {: .output}
+
+    Typical command prompt for MacOS users:
+
+    ~~~
+    machineid:~ username $
+    ~~~
+    {: .output}
+
+2. **Find out where you are and what is therein**
+
+   Once the terminal opens, **you will be** in your **home** directory. To see your home directory, type the **pwd** (print working directory) command and press the **Enter** key (**↵**) to the command prompt (we will only show the end of the prompt **$** from now on):
+
+    ~~~
+    $ pwd↵	
     ~~~
     {: .bash}
 
-    *Be sure to pay attention to capitalization and spaces*
+    *Don't type the* **$**.
 
-3. You will receive a security message that looks something like the message below
+    The output of **pwd** will be as follows.
+
+    For Windows users:
+    ~~~
+    /c/Users/yourusername
+    ~~~
+    {: .output}
+
+    For Linux users:
+    ~~~
+    /home/yourusername
+    ~~~
+    {: .output}
+
+    For MacOS users:
+    ~~~
+    /Users/yourusername
+    ~~~
+    {: .output}
+
+    That output means that your home directory is named yourusername (you will see your actual username), and that it is a subdirectory within the **parent** directory *Users*, in Windows and MacOS, and within the parent directory *home* in Linux.
+
+    Let's see what is in your home directory. Type the **ls** (list files) command and press Enter
 
     ~~~
-    Warning: Identity file login-key-instance05 not accessible: No such file or directory.
-    The authenticity of host 'instance05-gc-cloud-span.york.ac.uk (108.128.163.192)' can't be established.
-    ED25519 key fingerprint is SHA256:0BbxvVpzi+rPxBZrHxdXpHwggCacBJERHOkNObcac90.
-    This key is not known by any other names
-    Are you sure you want to continue connecting (yes/no/[fingerprint])?
+    $ ls↵	
     ~~~
     {: .bash}
 
-4. Type `yes` to proceed, and after a few seconds you should see the prompt of your instance:
+    This is a typical output of **ls** in a Linux machine but Windows users are likely to see a very long list of files and directories:
 
     ~~~
-    csuser@instance05-gc-cloud-span:~ $
+    bin  Desktop  docs  Downloads  machines-other  mail  pendings  snap  software  tmp
+    ~~~
+    {: .output}
+
+    Within your home directory you will find the typical directories like: Desktop, Documents Downloads, etc.
+    
+    *\*\*\*It just helps to get things organised and accessible to sort them into directories.* So, for you to keep all the resources for this course in the same place ..
+
+3. **Create a directory for the course and move to it**
+
+    You can create a directory and move to it by typying the following commands (recall to press Enter ↵ after each command):
+
+    ~~~
+    $ mkdir cloudspan			
+    $ cd cloudspan
     ~~~
     {: .bash}
 
-If the prompt above appears, you are now connected!  
+    The command **mkdir** stands for "make a directory"; and you must specify the name of the directory.
 
-Note that you don't need to type a password to login to your instance, as your are using a login-key file to authenticate your access to the instance.
+    The command **cd** stands for "change (to) directory"; and you must specify the name of the directory.
+
+    The directory *cloudspan* will be created in your home directory (where other directories such as *Desktop*, *Documents*, *Downloads*, .. are located) because (1) when you open a terminal you are placed in your home directory by default, and (2) where you are is your working directory (recall that pwd stands for print working directory), meaning that whatever command you issue will operate relative to your working directory unless you specify otherwise. Hence, **mkdir** assumed you wanted to create cloudspan in your (home) working directory and cd looked for cloudspan in your working directory to change to it.
+
+    We used cloudspan in the example above but **you can use another name** for your directory for the course and you can create it within another directory. Choose your directory name for the course so you can easily recall it and it helps you get your things organised. And change to it. For example:
+
+    ~~~
+    $ mkdir -p Documents/genomicscourse			
+    $ cd Documents/genomicscourse
+    ~~~
+    {: .bash}
+
+    Or
+    ~~~
+    $ mkdir -p courses/york/genomics
+    $ cd courses/york/genomics
+    ~~~
+    {: .bash}
+
+    The option **-p** instructs mkdir to create sub-directories if and as required. 
+
+    After you enter the command *cd cloudspan* (or *cd directoryyoucreated*), your **working directory will be** *cloudspan* or *directoryyoucreated*. 
+
+
+### II. Download and prepare the private key file to login to your AMI instance
+
+1. **Download your login key file**
+
+    In the email you received from the Cloud-SPAN team:
+    - Click on the embedded link to download (⬇) the file
+    - MacOS users may have to click on “download” when the file says it can’t be opened.
+
+
+    **NB**: 
+
+    If your browser asks you “where do you want to download the file?”, choose the directory for the course you just created and to which you should have already moved (at the end of Step I.3). If this is the case, then go to “3. Prepare your private key file” below.
+
+    Otherwise continue with the next step 2.
+
+2. **If necessary, move the login key file you downloaded to the directory you created for the course**
+
+    If your browser did not ask you where to download your login key file, you need to find out where it was dowloaded and move it to your working directory (the one you created for the course). You can:
+    
+    - find the file with the **File Manager** (or similar application) and get its location.
+    - or through the **browser**, on the bar shown by the browser at the bottom of the screen when the download finished, **right** click on the name of your login key file, and then (left) click on “Show in folder”. Once it is shown in a folder, right click on the file name/icon, and then (left) click on Properties.  The location of the file will be shown as (for example):  
+
+    ~~~
+    Location:           C:\Users\username\Downloas\login-key-instanceNN.pem         // Windows users
+    Parent folder:      /home/username/Downloads/login-key-instanceNN.pem.pem       // Linux users
+    Parent folder:      /Users/username/Downloads/login-key-instanceNN.pem.pem      // MacOS users 
+    ~~~
+    {: .output}
+    
+    Move the file to the directory your created for the course with the **mv** (move) command:
+
+    ~~~
+    $ mv ~/Downloads/login-key-instanceNN.pem .			
+    ~~~
+    {: .bash}
+
+    *Don't forget to replace NN with the actual number in your login key file*. 
+    
+    The character **~** represents your home directory, so you are specifying the full location for your login key file.
+    
+    The character dot **.** at the end of the command represents your current location or working directory, which should be the directory you created for the course (if this is not the case, the following commands will fail -- just go back and start again). 
+
+    Note that the full location of the file in Windows is shown with inverted slashes **\\** but the command mv uses "normal" slashes **/** for all users including Windows Git Bash users. This is correct. Git Bash emulates as much as possible the Bash shell, which was originally developed for Unix systems where file locations (called file paths in Unix) use normal slashes **/** to separate the names of directories and files in a file path.
+   
+3. **Prepare your login key file**
+
+    Change the access permissions of the file thus:
+
+    ~~~
+    $ chmod 400 login-key-instanceNN.pem 
+    ~~~
+    {: .bash}
+
+    Obviously change NN for whatever number is in your key file name.
+
+    The **chmod** command makes your login key file accessible only to you (and not-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
+
+### III. Login to your instance with ssh:
+
+1. Copy and paste the following command to your terminal but replace `NN` with the number in your login key file name.
+
+    ~~~
+    $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.york.ac.uk
+    ~~~
+    {: .bash}
+
+    *Be sure to replace NN twice.*
+
+    The **-i** option tells ssh the identity file containing the key to send to your AWS instance for it to check you have access to connect as an ssh client. We know the file is in your current working directory (the one you created for the course), and ssh looks for the file in your current working directory because you are only specifying the file name. 
+    
+    If the identity file were somewhere else, we would have had to specify the full path name or a relative path name, which you will learn more about later in the course.  
+
+2. The terminal will display a security message, after you enter the ssh command, similar to the one below: 
+
+    ~~~
+    The authenticity of host 'instance06-gc-cloud-span.york.ac.uk (52.211.132.120)' can't be established.ECDSA key fingerprint is SHA256:8N054prkkCeM4GCDSsa0AUnSQw5ngBQHbOR40FqfqLg.
+    Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+    ~~~
+    {: .output}
+
+    Type **yes** to continue and get connected to your AWS instance.
+
+    The terminal will display a few more messages and at then the prompt of the remote Linux machine that is your AWS instance:
+
+    ~~~
+    ...
+    csuser@instance05-gc.cloud-span:~ $
+    ~~~
+    {: .output}
+
+    Note that you didn't have to type a password to login to your instance, as your are using you login-key file for authentication.
 
 {% comment %}
 </div>
 {% endcomment %}
 
-## Logging off a cloud instance
+### IV. Logging off your cloud instance
 
-Logging off your instance is a lot like logging out of your local computer: it stops any processes
-that are currently running, but doesn't shut the computer off. **Be aware that AWS instances accrue charges whenever
-they are running, even if you are logged off**. Today, however, you do not need to worry about this.
+Logging off your instance is a lot like logging out of your local computer but it doesn't shut the computer off. **Be aware that AWS instances accrue charges whenever they are running, even if you are logged off**. Today, however, you do not need to worry about this.
 
-To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer:
+To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer prompt, for example:
 
 ~~~
-csuser@instance05-gc-cloud-span $ exit
+csuser@instance05-gc.cloud-span $ exit
 
-Amandas-MacBook-Pro-3 $
+Amanda-MacBook-Pro-3 $
 ~~~
 {: .bash}
 
-## Logging back in
+### V. Subsequent login's
 
-Internet connections can be slow or unstable. If you're just browsing the internet, that means you have
-reload pages, or wait for pictures to load. When you're working in the cloud, that means you'll sometimes
-be suddenly disconnected from your instance when you weren't expecting it. Even on the best internet
-connections, your signal will occasionally drop, so it's good to know the above SSH steps, and be able
-to log into AWS without looking up the instructions each time.
+To login back to your AWS instance, you only need to open a terminal, move to the directory you created for the course, and ssh as before:
+
+~~~ 
+$ cd directory-you-created-the-first-time
+$ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.york.ac.uk
+~~~
+{: .bash}
