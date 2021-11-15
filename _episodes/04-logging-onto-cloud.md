@@ -54,7 +54,7 @@ To login into your AWS instance for this course, you'll need:
 As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this:
 
  ~~~
- $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.york.ac.uk
+ $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
  ~~~
  {: .bash}
 
@@ -254,7 +254,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 1. Copy and paste the following command to your terminal but replace `NN` with the number in your login key file name.
 
     ~~~
-    $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.york.ac.uk
+    $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
     ~~~
     {: .bash}
 
@@ -264,10 +264,10 @@ But before that, it is most convenient that, to keep things tidy and easily acce
     
     If the identity file were somewhere else, we would have had to specify the full path name or a relative path name, which you will learn more about later in the course.  
 
-2. The terminal will display a security message, after you enter the ssh command, similar to the one below: 
+2. The terminal will display a security message, after you enter the ssh command, *similar* to the one below: 
 
     ~~~
-    The authenticity of host 'instance06-gc-cloud-span.york.ac.uk (52.211.132.120)' can't be established.ECDSA key fingerprint is SHA256:8N054prkkCeM4GCDSsa0AUnSQw5ngBQHbOR40FqfqLg.
+    The authenticity of host 'instance06-gc-cloud-span.aws.york.ac.uk (52.211.132.120)' can't be established.ECDSA key fingerprint is SHA256:8N054prkkCeM4GCDSsa0AUnSQw5ngBQHbOR40FqfqLg.
     Are you sure you want to continue connecting (yes/no/[fingerprint])? 
     ~~~
     {: .output}
@@ -307,6 +307,6 @@ To login back to your instance, open a terminal, move to the directory you creat
 
 ~~~ 
 $ cd directory-you-created-the-first-time
-$ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.york.ac.uk
+$ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
 ~~~
 {: .bash}
