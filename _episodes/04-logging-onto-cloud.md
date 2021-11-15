@@ -278,7 +278,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
     ~~~
     ...
-    csuser@instance05-gc.cloud-span:~ $
+    csuser@instance05-gc:~ $
     ~~~
     {: .output}
 
@@ -295,11 +295,15 @@ Logging off your instance is a lot like logging out of your local computer but i
 To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer prompt, for example:
 
 ~~~
-csuser@instance05-gc.cloud-span $ exit
-
-Amanda-MacBook-Pro-3 $
+csuser@instance05-gc:~ $ exit
 ~~~
 {: .bash}
+~~~
+logout
+Connection to instance05-gc.cloud-span.aws.york.ac.uk closed.
+Amanda-MacBook-Pro-3 $
+~~~
+{: .output}
 
 ## Subsequent logins to your AWS instance
 
