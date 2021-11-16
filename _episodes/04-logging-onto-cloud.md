@@ -134,7 +134,7 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
    
    Your home folder holds all your files and other folders such as the Desktop, Downloads, Documents, etc.
 
-   Move to the folder you created by typing the following and pressing **Enter** at the command prompt:
+   Move to the folder you created by typing the following and then pressing <kbd>Enter</kbd> at the command prompt:
 
     ~~~
     $ cd Desktop/cloudspan	
