@@ -74,10 +74,13 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
 2. **Download your login key file** to the folder you just created.
 
+   Click on the link embedded in the email you received from the Cloud-SPAN team.
+   
+   Mac users may need to Click on 'download' when the file says it can't be opened.
+
    If your browser asks you "where do you want to download the file?", choose the directory for the course you just created.
 
    Otherwise, drag and drop your login key file from wherever it was downloaded to the folder for the course you created.
-
 
 ## Open a Terminal and change the access permissions of your login key file
 
