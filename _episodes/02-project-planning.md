@@ -27,7 +27,7 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 >
 > - What challenges do you think you will face with a large sequence dataset?  
 > - How or where will you save and share your sequence files?  
-> - How will you analyze your data - what software, what computer?
+> - How will you analyse your data - what software, what computer?
 {: .challenge}
 
 # Sending samples to the facility
@@ -38,7 +38,7 @@ facility. Take a look at the following example submission spreadsheet, which is 
 [Sample submission sheet](https://docs.google.com/spreadsheets/d/1rHHpzQTuJFuybdhO0c40K6nKE6Hal-QB2ioMEQH3L3k/edit?usp=sharing)
 
 > ## Exercise
-> In your breakout room, discuss these questions:
+> If you are attending an instructor-led workshop, discuss these questions in your breakout room:
 > 1. How would you improve the naming of columns and samples?
 > 2. What errors do you see in the data?
 > 3. Are there any errors that would be difficult to spot? Is there any way you can test this?

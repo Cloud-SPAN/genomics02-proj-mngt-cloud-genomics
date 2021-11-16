@@ -25,7 +25,7 @@ For the purposes of this workshop we're going to be working with 3 of the sequen
 | SRR2584863 | REL7179B | 15,000 | Unknown | None |  150 | 88 |
 | SRR2584866 | REL11365 | 50,000 | Cit+ | plus |  150 | 138.3 |
 
-We want to be able to look at differences in mutation rates between hypermutable and non-hypermutable strains. We also want to analyze the sequences to figure out what changes occurred in genomes to make the strains Cit+. Ultimately, we will answer the questions:  
+We want to be able to look at differences in mutation rates between hypermutable and non-hypermutable strains. We also want to analyse the sequences to figure out what changes occurred in genomes to make the strains Cit+. Ultimately, we will answer the questions:  
 
 - How many base pair changes are there between the Cit+ and Cit- strains?  
 - What are the base pair changes between strains?  

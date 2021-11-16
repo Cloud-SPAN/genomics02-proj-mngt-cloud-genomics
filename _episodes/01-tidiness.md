@@ -71,7 +71,7 @@ consistent and can be used across the field.
 
 ### Structuring data in spreadsheets
 
-Independent of the type of data you're collecting, there are standard ways to enter that data into the spreadsheet, to make it easier to analyze later. We often enter data that makes it easy for us as humans to read and work with it, because we're human! Computers need data structured in a way that they can use it. So to use this data in a computational workflow, we need to think like computers when we use spreadsheets.
+Independent of the type of data you're collecting, there are standard ways to enter that data into the spreadsheet, to make it easier to analyse later. We often enter data that makes it easy for us as humans to read and work with it, because we're human! Computers need data structured in a way that they can use it. So to use this data in a computational workflow, we need to think like computers when we use spreadsheets.
 
 The cardinal rules of using spreadsheet programs for data:
 
@@ -88,7 +88,7 @@ analysis you want to do, you may even separate the genus and species names into 
 [![Messy spreadsheet](../fig/01_tidiness_datasheet_example_messy.png)](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing)
 
 > ## Discussion
-> This is some potential spreadsheet data generated about a sequencing experiment. In breakout rooms, for about 2 minutes, suggest some of the problems with the spreadsheet data shown above. You can look at the image, or view the spreadsheet on Google Sheets via this [link](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing).
+> This is some potential spreadsheet data generated about a sequencing experiment. If you are attending an instructor-led workshop use breakout rooms, for about 2 minutes, to suggest some of the problems with the spreadsheet data shown above. You can look at the image, or view the spreadsheet on Google Sheets via this [link](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing).
 >
 > Nominate someone from your group to summarise your ideas on the Padlet.
 >
@@ -106,6 +106,6 @@ Data organisation at this point of your experiment will help facilitate your ana
 
 A good article on organising data in spreadsheets is Karl W. Broman & Kara H. Woo (2018) Data Organization in Spreadsheets, The American Statistician, 72:1, 2-10, DOI: [10.1080/00031305.2017.1375989](https://doi.org/10.1080/00031305.2017.1375989)
 
-Fear not! If you have already started your project, and it's not set up this way, there are still opportunities to make updates. One of the biggest challenges is tabular data that is not formatted so computers can use it, or has inconsistencies that make it hard to analyze.
+Fear not! If you have already started your project, and it's not set up this way, there are still opportunities to make updates. One of the biggest challenges is tabular data that is not formatted so computers can use it, or has inconsistencies that make it hard to analyse.
 
 Tools like [OpenRefine](http://www.datacarpentry.org/OpenRefine-ecology-lesson/) can help you clean your data.
