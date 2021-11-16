@@ -76,7 +76,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
    Click on the link embedded in the email you received from the Cloud-SPAN team.
    
-   Mac users may need to Click on 'download' when the file says it can't be opened.
+   **Mac users** may need to Click on 'download' when the file says it can't be opened.
 
    If your browser asks you "where do you want to download the file?", choose the directory for the course you just created.
 
