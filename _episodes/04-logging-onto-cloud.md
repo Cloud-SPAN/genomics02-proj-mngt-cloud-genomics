@@ -62,7 +62,24 @@ A few seconds after you enter that command to the shell in your computer, you wi
 
 But before that, it is most convenient that, to keep things tidy and easily accessible, you first create a folder (or directory) to keep in there everything related to the course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
 
-## Open a Terminal and create a directory for the course
+## Create a folder for the course and download therein your login key file
+
+1. **Create the folder** *cloudspan* in your *Desktop*.
+
+   In your Desktop, click the right button of the mouse to open the File Explorer/Manager menu, and then left click on New and then on Folder, in Windows, or New Folder in Linux Gnome.
+
+   Name the folder cloudspan.
+
+   Later you can change the name of the folder and move it somewhere else.
+
+2. **Download your login key file** to the folder you just created.
+
+   If your browser asks you "where do you want to download the file?", choose the directory for the course you just created.
+
+   Otherwise, drag and drop your login key file from wherever it was downloaded to the folder for the course you created.
+
+
+## Open a Terminal and change the access permissions of your login key file
 
 1. **Open terminal** (or Git Bash terminal if you are a Windows user). 
 
@@ -105,149 +122,36 @@ But before that, it is most convenient that, to keep things tidy and easily acce
     ~~~
     {: .output}
 
-2. **Find out where you are and what is therein**
+2. **Move to the folder you created for the course**
 
-   Once the terminal opens, **you will be** in your **home** directory. To see your home directory, type the **pwd** (print working directory) command and press the **Enter** key (**↵**) to the command prompt (we will only show the end of the prompt **$** from now on):
-
-    ~~~
-    $ pwd↵	
-    ~~~
-    {: .bash}
-
-    *Don't type the* **$**.
-
-    The output of **pwd** will be as follows.
-
-    For Windows users:
-    ~~~
-    /c/Users/yourusername
-    ~~~
-    {: .output}
-
-    For Linux users:
-    ~~~
-    /home/yourusername
-    ~~~
-    {: .output}
-
-    For MacOS users:
-    ~~~
-    /Users/yourusername
-    ~~~
-    {: .output}
-
-    That output means that your home directory is named yourusername (you will see your actual username), and that it is a subdirectory within the **parent** directory *Users*, in Windows and MacOS, and within the parent directory *home* in Linux.
-
-    Let's see what is in your home directory. Type the **ls** (list files) command and press Enter
-
-    ~~~
-    $ ls↵	
-    ~~~
-    {: .bash}
-
-    This is a typical output of **ls** in a Linux machine but Windows users are likely to see a very long list of files and directories:
-
-    ~~~
-    bin  Desktop  docs  Downloads  machines-other  mail  pendings  snap  software  tmp
-    ~~~
-    {: .output}
-
-    Within your home directory you will find the typical directories like: Desktop, Documents Downloads, etc.
-    
-    *\*\*\* As mentioned earlier, it just helps to get things organised and accessible to sort them into directories.* So,
-
-3. **Create a directory for the course and move to it**
-
-    You can create a directory and move to it by typying the following commands (recall to press Enter ↵ after each command):
-
-    ~~~
-    $ mkdir cloudspan			
-    $ cd cloudspan
-    ~~~
-    {: .bash}
-
-    The command **mkdir** stands for "make a directory"; and you must specify the name of the directory.
-
-    The command **cd** stands for "change (to) directory"; and you must specify the name of the directory.
-
-    The directory *cloudspan* will be created in your home directory (where other directories such as *Desktop*, *Documents*, *Downloads*, .. are located) because (1) when you open a terminal you are placed in your home directory by default, and (2) where you are is your working directory (recall that pwd stands for print working directory), meaning that whatever command you issue will operate relative to your working directory unless you specify otherwise. Hence, **mkdir** assumed you wanted to create cloudspan in your (home) working directory and cd looked for cloudspan in your working directory to change to it.
-
-    We used cloudspan in the example above but **you can use another name** for your directory for the course and you can create it within another directory. Choose your directory name for the course so you can easily recall it and it helps you get your things organised. And change to it. For example:
-
-    ~~~
-    $ mkdir -p Documents/genomicscourse			
-    $ cd Documents/genomicscourse
-    ~~~
-    {: .bash}
-
-    Or
-    ~~~
-    $ mkdir -p courses/york/genomics
-    $ cd courses/york/genomics
-    ~~~
-    {: .bash}
-
-    The option **-p** instructs mkdir to create sub-directories if and as required. 
-
-    After you enter the command *cd cloudspan* (or *cd directoryyoucreated*), your **working directory will be** *cloudspan* or *directoryyoucreated*. 
-
-
-## Download and prepare your login key file to login into your instance
-
-1. **Download your login key file**
-
-    In the email you received from the Cloud-SPAN team:
-    - Click on the embedded link to download (⬇) the file
-    - MacOS users may have to click on “download” when the file says it can’t be opened.
-
-
-    **NB**: 
-
-    If your browser asks you “where do you want to download the file?”, choose the directory for the course you just created and to which you should have already moved (at the end of Step I.3). If this is the case, then go to “3. Prepare your private key file” below.
-
-    Otherwise continue with the next step 2.
-
-2. **If necessary, move the login key file you downloaded to the directory you created for the course**
-
-    If your browser did not ask you where to download your login key file, you need to find out where it was dowloaded and move it to your working directory (the one you created for the course). You can:
-    
-    - find the file with the **File Manager** (or similar application) and get its location.
-    - or through the **browser**, on the bar shown by the browser at the bottom of the screen when the download finished, **right** click on the name of your login key file, and then (left) click on “Show in folder”. Once it is shown in a folder, right click on the file name/icon, and then (left) click on Properties.  The location of the file will be shown as (for example):  
-
-    ~~~
-    Location:           C:\Users\username\Downloas\login-key-instanceNN.pem         // Windows users
-    Parent folder:      /home/username/Downloads/login-key-instanceNN.pem.pem       // Linux users
-    Parent folder:      /Users/username/Downloads/login-key-instanceNN.pem.pem      // MacOS users 
-    ~~~
-    {: .output}
-    
-    Move the file to the directory your created for the course with the **mv** (move) command:
-
-    ~~~
-    $ mv ~/Downloads/login-key-instanceNN.pem .			
-    ~~~
-    {: .bash}
-
-    *Don't forget to replace NN with the actual number in your login key file*. 
-    
-    The character **~** represents your home directory, so you are specifying the full location for your login key file.
-    
-    The character dot **.** at the end of the command represents your current location or working directory, which should be the directory you created for the course (if this is not the case, the following commands will fail -- just go back and start again). 
-
-    Note that the full location of the file in Windows is shown with inverted slashes **\\** but the command mv uses "normal" slashes **/** for all users including Windows Git Bash users. This is correct. Git Bash emulates as much as possible the Bash shell, which was originally developed for Unix systems where file locations (called file paths in Unix) use normal slashes **/** to separate the names of directories and files in a file path.
+   Once the terminal opens, **you will be** in your **home** folder (directory). 
    
-3. **Prepare your login key file**
+   Your home folder holds all your files and other folders such as the Desktop, Downloads, Documents, etc.
 
-    Change the access permissions of the file thus:
+   Move to the folder you created by typing the following and pressing the **Enter** key (**↵**) in front of the command prompt:
 
+    ~~~
+    $ cd Desktop/cloudspan↵	
+    ~~~
+    {: .bash}
+
+    *Don't type the dollar character* $.
+
+    The command **cd** stands for "change (to) directory", and you must specify the name of the directory you want to move to. 
+
+    In the command above, we have specified *to change to* a directory within a directory.
+
+    We only showed the end of the command prompt **$** above, and do so below too. *Recall not to type it and to press the Enter key  at the end*.
+
+3. **Change the access permissions of your login key file**
+
+    Enter the following command to change the access permissions of your file but **replace** NN with the actual number in your file name:
     ~~~
     $ chmod 400 login-key-instanceNN.pem 
     ~~~
     {: .bash}
 
-    Obviously change NN for whatever number is in your key file name.
-
-    The **chmod** command makes your login key file accessible only to you (and not-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
+    The command **chmod** (change access mode) makes your login key file accessible to you only (and non-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
 
 ## Login into your instance with ssh
 
@@ -284,10 +188,6 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
     Note that you didn't have to type a password to login to your instance, as your are using you login-key file for authentication.
 
-{% comment %}
-</div>
-{% endcomment %}
-
 ## Logging off your cloud instance
 
 Logging off your instance is a lot like logging out of your local computer but it doesn't shut the computer off. **Be aware that AWS instances accrue charges whenever they are running, even if you are logged off**. Today, however, you do not need to worry about this.
@@ -310,7 +210,7 @@ Amanda-MacBook-Pro-3 $
 To login back to your instance, open a terminal, move to the directory you created for the course, and ssh as before:
 
 ~~~ 
-$ cd directory-you-created-the-first-time
+$ cd Desktop/cloudspan
 $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
 ~~~
 {: .bash}
