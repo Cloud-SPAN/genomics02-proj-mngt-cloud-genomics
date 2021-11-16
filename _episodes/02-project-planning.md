@@ -66,7 +66,7 @@ facility. Take a look at the following example submission spreadsheet, which is 
 > {: .solution}
 {: .challenge}
 
-# Retrieving sample sequencing data from the facility
+# Getting data from the facility
 
 When the data come back from the sequencing facility, you will receive some documentation (metadata) as well as
 the sequence files themselves. Take a look at this Google Sheets file:
@@ -75,11 +75,11 @@ the sequence files themselves. Take a look at this Google Sheets file:
 
 > ## Exercise
 >Use the padlet to discuss:
-> 1. How are these samples organised?
-> 2. If you wanted to relate file names to the sample names submitted above (e.g. wild type...) could you do so?
+> 1. How are the samples organised?
+> 2. Are you are to relate file names to the sample names you submitted?
 > 3. What do the \_R1/\_R2 extensions mean in the file names?
 > 4. What does the '.gz' extension on the filenames indicate?
-> 5. What is the total file size - what challenges in downloading and sharing these data might exist?  
+> 5. What is the total file size - what challenges might this create?  
 >
 > > ## Solution
 > >
