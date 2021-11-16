@@ -22,12 +22,12 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 
 > ## Discussion
 >
-> Before we go any further, here are some important questions to consider. If you are learning at a workshop,
-> please use the padlet to share your ideas.
+> Before we go any further, here are some important questions to consider. If you are learning at a workshop, please use the padlet to share your ideas.
+> It's okay if you don't have answers to these questions yet. This course should help you find some of the answers.
 >
-> What challenges do you think you will face with a large sequence dataset?  
-> How or where will you save and share your sequence files?  
-> How will you analyze your data - what software, what computer?
+> - What challenges do you think you will face with a large sequence dataset?  
+> - How or where will you save and share your sequence files?  
+> - How will you analyze your data - what software, what computer?
 {: .challenge}
 
 # Sending samples to the facility
@@ -38,17 +38,19 @@ facility. Take a look at the following example submission spreadsheet, which is 
 [Sample submission sheet](https://docs.google.com/spreadsheets/d/1rHHpzQTuJFuybdhO0c40K6nKE6Hal-QB2ioMEQH3L3k/edit?usp=sharing)
 
 > ## Exercise
-> Use the padlet to discuss:
+> In your breakout room, discuss these questions:
 > 1. How would you improve the naming of columns and samples?
 > 2. What errors do you see in the data?
-> 3. Are there any erros that would be difficult to spot? Is there any way you can test this?
+> 3. Are there any errors that would be difficult to spot? Is there any way you can test this?
+>
+> Nominate someone from your group to summarise your ideas for each question on the Padlet.
 >
 > > ## Solution
 > > Improvements in names
 > > - Shorten client_sample_id names, and maybe just call them "names"
 > >   - For example: "wt" for "wild-type". Also, they are all "1hr", so that is superfluous information
 > > - The prep_date and ship_date might not be needed
-> > - Use "microliters" for "Volume (µL)" etc.
+> > - Use "microlitres" for "Volume (µL)" etc.
 > > 
 > > Errors:
 > > - Sequential order of well_position changes
@@ -74,12 +76,14 @@ the sequence files themselves. Take a look at this Google Sheets file:
 - [Sequencing results metadata](https://docs.google.com/spreadsheets/d/1IyNShMHu0IDbwij4ZdcXtOh5_V53KBcwu1i70Dfaa3g/edit?usp=sharing)
 
 > ## Exercise
->Use the padlet to discuss:
+> Think about the following and add your ideas to the Padlet:
 > 1. How are the samples organised?
-> 2. Are you are to relate file names to the sample names you submitted?
-> 3. What do the \_R1/\_R2 extensions mean in the file names?
+> 2. Are you able to relate file names to the sample names you submitted?
+> 3. What do the \_R1/\_R2 extensions mean in the 'filename' column?
 > 4. What does the '.gz' extension on the filenames indicate?
 > 5. What is the total file size - what challenges might this create?  
+>
+> Don't worry if you're not sure about an answer - just have a go! If you have time, you can use the internet to look up an answer to question 4.
 >
 > > ## Solution
 > >
@@ -87,7 +91,7 @@ the sequence files themselves. Take a look at this Google Sheets file:
 > > 2. To relate filenames use the sample_id, and do a VLOOKUP on submission sheet
 > > 3. The \_R1/\_R2 extensions mean "Read 1" and "Read 2" of each sample
 > > 4. The '.gz' extension means it is a compressed "gzip" type format to save disk space
-> > 5. The size of all the files combined is 1113.60 Gb (over a terabyte!). To transfer files this large you should validate the file size following transfer. Absolute file integrity checks following transfers and methods for faster file transfers are possible but beyond the scope of this lesson.
+> > 5. The size of all the files combined is 1113.60 Gb (over a terabyte). This is big! To transfer files this large you should validate the file size following transfer. Absolute file integrity checks following transfers and methods for faster file transfers are possible but beyond the scope of this lesson.
 > >
 > {: .solution}
 {: .challenge}
@@ -104,7 +108,7 @@ The raw data you get back from the sequencing center is the foundation of your s
 
 #### Some data storage solutions
 
-If you have a local high performance computing center or data storage facility on your campus or with your organisation, those are ideal locations. Get in touch with the people who support those facilities to ask for information.
+If you have a local high performance computing center or data storage facility on your campus or with your organisation, these are ideal locations. Get in touch with the people who support those facilities to ask for information.
 
 If you do not have access to these resources, you can back up on hard drives. Have two backups, and keep the hard drives in different physical locations.
 
