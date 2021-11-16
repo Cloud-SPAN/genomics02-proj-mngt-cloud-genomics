@@ -19,17 +19,16 @@ keypoints:
 When we think about the data for a sequencing project, we often start by thinking about the sequencing data that we get back from the sequencing center, but just as important, if not more so, is the data you've generated about the sequences before it ever goes to the sequencing center. This is the data about the data, often called the metadata. Without the information about what you sequenced, the sequence data itself is useless.  
 
 > ## Discussion
-> On the padlet, discuss:
->
-> What kinds of data and information have you generated before you sent your DNA/RNA off for sequencing?
+> What kinds of data and information are you likely to have generated before sending your DNA/RNA off for sequencing? Put your ideas on the Padlet.
 >
 > > ## Solution
-> > Types of files and information you have generated:  
+> > Types of files and information you might have generated:  
 > > - Spreadsheet or tabular data with the data from your experiment and whatever you were measuring for your study.
 > > - Lab notebook notes about how you conducted those experiments.
-> > - Spreadsheet or tabular data about the samples you sent off for sequencing. Sequencing centers often have a particular format they need with the name of the sample, DNA concentration and other information.
+> > - Spreadsheet or tabular data about the samples you sent off for sequencing. Sequencing centres often have a particular format they need with the name of the sample, DNA concentration and other information.
 > > - Lab notebook notes about how you prepared the DNA/RNA for sequencing and what type of sequencing you're doing, e.g. paired end Illumina HiSeq.
-> > There likely will be other ideas here too.
+> >
+> > There likely will be other ideas here too.  
 > > Was this more information and data than you were expecting?
 > {: .solution}
 {: .challenge}
@@ -89,11 +88,13 @@ analysis you want to do, you may even separate the genus and species names into 
 [![Messy spreadsheet](../fig/01_tidiness_datasheet_example_messy.png)](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing)
 
 > ## Discussion
-> This is some potential spreadsheet data generated about a sequencing experiment. Using the padlet, for about 2 minutes, suggest some of the problems with the spreadsheet data shown above. You can look at the image, or view the spreadsheet on Google Sheets via this [link](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing).
+> This is some potential spreadsheet data generated about a sequencing experiment. In breakout rooms, for about 2 minutes, suggest some of the problems with the spreadsheet data shown above. You can look at the image, or view the spreadsheet on Google Sheets via this [link](https://docs.google.com/spreadsheets/d/1ZposEZ2nWzQl_GPix3FhHqM0CV7asjve52O7urmWBqk/edit?usp=sharing).
+>
+> Nominate someone from your group to summarise your ideas on the Padlet.
 >
 >
 > > ## Solution
-> > A full set of types of issues with spreadsheet data is at the [Data Carpentry Ecology spreadsheet lesson](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/). Not all are present in this example. Discuss with the group what they found. Some problems include not all data sets having the same columns, datasets split into their own tables, color to encode information, different column names, spaces in some columns names. Here is a "clean" version of the same spreadsheet:
+> > A full set of types of issues with spreadsheet data is at the [Data Carpentry Ecology spreadsheet lesson](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/). Not all are present in this example. Some problems include not all data sets having the same columns, datasets split into their own tables, use of colour to encode information, different column names, spaces in some columns names. Here is a "clean" version of the same spreadsheet:
 > >
 > >[Cleaned spreadsheet](https://docs.google.com/spreadsheets/d/1Cv-f_nWX7A7U96l9__R4xfjq3GiQ2aIIKH5RU2yiHFw/edit?usp=sharing)
 > {: .solution}
@@ -103,9 +104,8 @@ analysis you want to do, you may even separate the genus and species names into 
 
 Data organisation at this point of your experiment will help facilitate your analysis later, as well as prepare your data and notes for data deposition now often required by journals and funding agencies. If this is a collaborative project, as most projects are now, it's also information that collaborators will need to interpret your data and results and is very useful for communication and efficiency.
 
-A good article on organising data in spread sheets is Karl W. Broman & Kara H. Woo (2018) Data Organization in Spreadsheets, The American Statistician, 72:1, 2-10, DOI: [10.1080/00031305.2017.1375989](https://doi.org/10.1080/00031305.2017.1375989)
+A good article on organising data in spreadsheets is Karl W. Broman & Kara H. Woo (2018) Data Organization in Spreadsheets, The American Statistician, 72:1, 2-10, DOI: [10.1080/00031305.2017.1375989](https://doi.org/10.1080/00031305.2017.1375989)
 
 Fear not! If you have already started your project, and it's not set up this way, there are still opportunities to make updates. One of the biggest challenges is tabular data that is not formatted so computers can use it, or has inconsistencies that make it hard to analyze.
-
 
 Tools like [OpenRefine](http://www.datacarpentry.org/OpenRefine-ecology-lesson/) can help you clean your data.
