@@ -51,7 +51,7 @@ To login into your AWS instance for this course, you'll need:
 - the shell/terminal application ---- **Windows users** should have already installed the *Git Bash* shell; otherwise follow the directions in the [Setup](../setup)
 - the *secure shell* (**ssh**) application, which is readily available in MacOS, Linux and Windows. **Windows users** will use ssh through Git Bash. 
 
-As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this:
+As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this (you do not have to have this yet):
 
  ~~~
  $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
@@ -60,7 +60,7 @@ As the name implies, **ssh** provides you with a secure (encrypted) way to use a
 
 A few seconds after you enter that command to the shell in your computer, you will be logged into your AWS instance and start using a (Linux) shell running in your instance.
 
-But before that, it is most convenient that, to keep things tidy and easily accessible, you first create a folder (or directory) to keep in there everything related to the course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
+But first, to keep things tidy and easily accessible, create a folder (or directory) to keep everything related to this course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
 
 ## Create a folder for the course and download therein your login key file
 
@@ -109,7 +109,8 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
     Obviously "username" and "machineid" in the Code box above will be different when you open a terminal and will correspond to the actual username and the name of the machine you are using. 
 
-    The character **$** is the typical ending of user prompts (the ending of admin users prompts is typically **#**). Commands you type will follow the **$**.
+    The character `$` is the typical ending of user prompts (the ending of admin users prompts is typically `#`). Commands you type will follow the `$`.
+    
 
     Typical command prompt for Linux users:
 
@@ -124,6 +125,8 @@ But before that, it is most convenient that, to keep things tidy and easily acce
     machineid:~ username $
     ~~~
     {: .output}
+    
+    In the rest of this course we will show only the `$` to represent the prompt. 
 
 2. **Move to the folder you created for the course**
 
@@ -131,20 +134,20 @@ But before that, it is most convenient that, to keep things tidy and easily acce
    
    Your home folder holds all your files and other folders such as the Desktop, Downloads, Documents, etc.
 
-   Move to the folder you created by typing the following and pressing the **Enter** key (**↵**) in front of the command prompt:
+   Move to the folder you created by typing the following and pressing **Enter** at the command prompt:
 
     ~~~
-    $ cd Desktop/cloudspan↵	
+    $ cd Desktop/cloudspan	
     ~~~
     {: .bash}
 
-    *Don't type the dollar character* $.
+    *Don't type the dollar character* `$`.
 
-    The command **cd** stands for "change (to) directory", and you must specify the name of the directory you want to move to. 
+    The command `cd` stands for "change (to) directory", and you must specify the name of the directory you want to move to. 
 
     In the command above, we have specified *to change to* a directory within a directory.
 
-    We only showed the end of the command prompt **$** above, and do so below too. *Recall not to type it and to press the Enter key  at the end*.
+   
 
 3. **Change the access permissions of your login key file**
 
@@ -154,7 +157,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
     ~~~
     {: .bash}
 
-    The command **chmod** (change access mode) makes your login key file accessible to you only (and non-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
+    The command `chmod` (change access mode) makes your login key file accessible to you only (and non-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
 
 ## Login into your instance with ssh
 
@@ -167,7 +170,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
     *Be sure to replace NN twice.*
 
-    The **-i** option tells ssh the identity file containing the key to send to your AWS instance for it to check you have access to connect as an ssh client. We know the file is in your current working directory (the one you created for the course), and ssh looks for the file in your current working directory because you are only specifying the file name. 
+    The `-i` option tells ssh the identity file containing the key to send to your AWS instance for it to check you have access to connect as an ssh client. We know the file is in your current working directory (the one you created for the course), and ssh looks for the file in your current working directory because you are only specifying the file name. 
     
     If the identity file were somewhere else, we would have had to specify the full path name or a relative path name, which you will learn more about later in the course.  
 
@@ -189,11 +192,11 @@ But before that, it is most convenient that, to keep things tidy and easily acce
     ~~~
     {: .output}
 
-    Note that you didn't have to type a password to login to your instance, as your are using you login-key file for authentication.
+    Note that you did not need to give a password to login to your instance - you are using you login-key file for authentication.
 
 ## Logging off your cloud instance
 
-Logging off your instance is a lot like logging out of your local computer but it doesn't shut the computer off. **Be aware that AWS instances accrue charges whenever they are running, even if you are logged off**. Today, however, you do not need to worry about this.
+Logging off your instance is a lot like logging out of your local computer but it doesn't shut the computer off. **Be aware that AWS instances accrue charges whenever they are running, even if you are logged off**. Today, however, you do not need to worry about this!
 
 To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer prompt, for example:
 
