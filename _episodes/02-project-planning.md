@@ -25,10 +25,9 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 > Before we go any further, here are some important questions to consider. If you are learning at a workshop,
 > please use the padlet to share your ideas.
 >
-> What challenges do you think you'll face (or have already faced) in working with a large sequence dataset?  
-> What is your strategy for saving and sharing your sequence files?  
-> How can you be sure that your raw data have not been unintentionally corrupted?  
-> Where/how will you (did you) analyze your data - what software, what computer(s)?
+> What challenges do you think you will face with a large sequence dataset?  
+> How or where will you save and share your sequence files?  
+> How will you analyze your data - what software, what computer?
 {: .challenge}
 
 # Sending samples to the facility
@@ -40,11 +39,17 @@ facility. Take a look at the following example submission spreadsheet, which is 
 
 > ## Exercise
 > Use the padlet to discuss:
-> 1. What are some errors you can spot in the data? Typos, missing data, inconsistencies?
-> 2. What improvements could be made to the choices in naming?
-> 3. What are some errors in the spreadsheet that would be difficult to spot? Is there any way you can test this?
+> 1. How would you improve the naming of columns and samples?
+> 2. What errors do you see in the data?
+> 3. Are there any erros that would be difficult to spot? Is there any way you can test this?
 >
 > > ## Solution
+> > Improvements in names
+> > - Shorten client_sample_id names, and maybe just call them "names"
+> >   - For example: "wt" for "wild-type". Also, they are all "1hr", so that is superfluous information
+> > - The prep_date and ship_date might not be needed
+> > - Use "microliters" for "Volume (µL)" etc.
+> > 
 > > Errors:
 > > - Sequential order of well_position changes
 > > - Format of client_sample_id changes and cannot have spaces, slashes, non-standard ASCII characters
@@ -53,12 +58,6 @@ facility. Take a look at the following example submission spreadsheet, which is 
 > > - Volume, concentration, and RIN column decimal accuracy changes
 > > - The prep_date and ship_date formats are different, and prep_date has multiple formats
 > > - Are there others not mentioned?
-> >
-> > Improvements in naming
-> > - Shorten client_sample_id names, and maybe just call them "names"
-> >   - For example: "wt" for "wild-type". Also, they are all "1hr", so that is superfluous information
-> > - The prep_date and ship_date might not be needed
-> > - Use "microliters" for "Volume (µL)" etc.
 > >
 > > Errors hard to spot:
 > > - No space between "wild" and "type", repeated barcode numbers, missing data, duplicate names
