@@ -358,3 +358,18 @@ bioinformatic software that is only available in command line versions.
 
 In the next few episodes, we'll be expanding on these skills and seeing how
 using the command line shell enables us to make our workflow more efficient and reproducible.
+
+For now, log off using the `exit` command: This will close the connection, and your terminal will go back to showing your local computer prompt, for example:
+
+~~~
+csuser@instance05-gc:~ $ exit
+~~~
+{: .bash}
+
+This will close the connection, and your terminal will go back to showing your local computer prompt, for example:
+~~~
+logout
+Connection to instance05-gc.cloud-span.aws.york.ac.uk closed.
+Amanda-MacBook-Pro-3 $
+~~~
+{: .output}
