@@ -62,7 +62,7 @@ A few seconds after you enter that command to the shell in your computer, you wi
 
 But first, to keep things tidy and easily accessible, create a folder (or directory) to keep everything related to this course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
 
-## Create a folder for the course and download therein your login key file
+## Create a folder for the course and download your login key file to that folder
 
 1. **Create the folder** *cloudspan* in your *Desktop*.
 
