@@ -40,7 +40,7 @@ facility. Let's take a look at this [example submission spreadsheet](https://doc
 > If you are attending an instructor-led workshop, discuss these questions in your breakout room:
 > 1. How would you improve the naming of columns and samples?
 > 2. What errors do you see in the data?
-> 3. Are there any errors that would be difficult to spot? Is there any way you can test this?
+> 3. Are there any types of error that would be difficult to spot? Is there any way you can test these to find thems
 >
 > Nominate someone from your group to summarise your ideas for each question on the Padlet.
 >
@@ -50,12 +50,11 @@ facility. Let's take a look at this [example submission spreadsheet](https://doc
 > >   - For example: "wt" for "wild-type". Also, they are all "1hr", so that is superfluous information
 > > - The prep_date and ship_date might not be needed
 > > - Use "microlitres" for "Volume (µL)" etc.
-> > 
-> > Errors:
-> > - Sequential order of well_position changes
-> > - Format of client_sample_id changes and cannot have spaces, slashes, non-standard ASCII characters
-> > - Capitalization of the replicate column changes
 > > - Volume and concentration column headers have unusual (not allowed) characters
+> > - Format of client_sample_id changes and cannot have spaces, slashes, non-standard ASCII characters
+> >
+> > Errors:
+> > - Capitalization of the replicate column changes
 > > - Volume, concentration, and RIN column decimal accuracy changes
 > > - The prep_date and ship_date formats are different, and prep_date has multiple formats
 > > - Are there others not mentioned?
