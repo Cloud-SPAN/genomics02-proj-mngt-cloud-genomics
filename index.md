@@ -18,7 +18,7 @@ In this lesson, we'll be using data from a famous study of experimental evolutio
 - spreadsheet data with information on the samples that were sequenced - the names of the samples, how they were prepared and the sequencing conditions
 - the sequence data
 
-Throughout the analysis, we will more generate files from the steps in the bioinformatics pipeline and documentation on the tools and parameters that we used.
+Throughout the analysis, we will generate more files from the steps in the bioinformatics pipeline and documentation on the tools and parameters that we used.
 
 > ## Getting Started
 >
