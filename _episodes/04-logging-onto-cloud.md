@@ -48,7 +48,7 @@ We have a pre-configured copy of the data and software analysis tools needed for
 
 To login into your AWS instance for this course, you'll need:
 - the name of your instance and a login key file, both of which you received via email
-- the shell/terminal application ---- **Windows users** should have already installed the *Git Bash* shell; otherwise follow the directions in the [Setup](../setup)
+- the shell/terminal application --- **Windows users** should have already installed the *Git Bash* shell; otherwise follow the directions in the [Setup](../setup)
 - the *secure shell* (**ssh**) application, which is readily available in MacOS, Linux and Windows. **Windows users** will use ssh through Git Bash. 
 
 As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this:
@@ -68,7 +68,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
    In your Desktop, click the right button of the mouse to open the File Explorer/Manager menu, and then left click on New and then on Folder, in Windows, or New Folder in Linux Gnome.
 
-   Name the folder cloudspan.
+   Name the folder *cloudspan*.
 
    Later you can change the name of the folder and move it somewhere else.
 
@@ -107,9 +107,11 @@ But before that, it is most convenient that, to keep things tidy and easily acce
     ~~~
     {: .output}
 
-    Obviously "username" and "machineid" in the Code box above will be different when you open a terminal and will correspond to the actual username and the name of the machine you are using. 
+    Obviously "username" and "machineid" in the Output box above will be different when you open a terminal and will correspond to the actual username and the name of the machine you are using. 
 
-    The character **$** is the typical ending of user prompts (the ending of admin users prompts is typically **#**). Commands you type will follow the **$**.
+    The character **$** is the typical ending of user prompts (the ending of admin users prompts is typically **#**).
+
+    Commands you type will follow the $. 
 
     Typical command prompt for Linux users:
 
@@ -127,11 +129,9 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
 2. **Move to the folder you created for the course**
 
-   Once the terminal opens, **you will be** in your **home** folder (directory). 
-   
-   Your home folder holds all your files and other folders such as the Desktop, Downloads, Documents, etc.
+   Once the terminal opens, **you will be** in your **home** folder (directory), which contains all your files and other folders such as the Desktop, Downloads, Documents, etc.
 
-   Move to the folder you created by typing the following and pressing the **Enter** key (**↵**) in front of the command prompt:
+   Move to the folder you created for the course by typing the following command and pressing the **Enter** key (**↵**) in front of the command prompt:
 
     ~~~
     $ cd Desktop/cloudspan↵	
@@ -142,7 +142,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
     The command **cd** stands for "change (to) directory", and you must specify the name of the directory you want to move to. 
 
-    In the command above, we have specified *to change to* a directory within a directory.
+    In the command above, we have specified *to change to* a directory within another directory.
 
     We only showed the end of the command prompt **$** above, and do so below too. *Recall not to type it and to press the Enter key  at the end*.
 
@@ -154,22 +154,27 @@ But before that, it is most convenient that, to keep things tidy and easily acce
     ~~~
     {: .bash}
 
-    The command **chmod** (change access mode) makes your login key file accessible to you only (and non-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
+    The command **chmod** (change access mode) makes your login key file accessible to you only (and non-accessible to any other potential users of your computer), a condition that is required and checked by the program **ssh** that you will use next to login to your AWS instance. You will learn about file access permissions later in the course.
 
 ## Login into your instance with ssh
 
-1. Copy and paste the following command to your terminal but replace `NN` with the number in your login key file name.
+1. Copy and paste the command in the Code box below to your terminal but replace `NN` with the number in your login key file name.
+
+    Windows Git Bash users only:
+    - **copy** the command the usual Windows way: (1) highlight it with the mouse pointer while pressing the mouse left button and (2) press Ctrl-v (keys Ctrl and v simultaneously).
+    - but **paste** it by pressing the mouse middle button while hovering the mouse pointer over the Git Bash window. (Try with the right button if the middle one doesn't work.)
 
     ~~~
     $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
     ~~~
     {: .bash}
 
-    *Be sure to replace NN twice.*
+    *Be sure to replace NN twice.* You can use the left and right arrow keys to move to where NN is.
 
-    The **-i** option tells ssh the identity file containing the key to send to your AWS instance for it to check you have access to connect as an ssh client. We know the file is in your current working directory (the one you created for the course), and ssh looks for the file in your current working directory because you are only specifying the file name. 
-    
-    If the identity file were somewhere else, we would have had to specify the full path name or a relative path name, which you will learn more about later in the course.  
+    The **-i** option tells **ssh** the identity file containing the key to send to your AWS instance for it to check that you have access permissions to connect as an **ssh client**. 
+
+    *NB*: **ssh** looks for the identity file in the directory where you are (Desktop/cloudspan that you moved to with the command *cd* above), which is the directory where you downloaded your login key file.  
+
 
 2. The terminal will display a security message, after you enter the ssh command, *similar* to the one below: 
 
@@ -181,7 +186,7 @@ But before that, it is most convenient that, to keep things tidy and easily acce
 
     Type **yes** to continue and get connected to your AWS instance.
 
-    The terminal will display a few more messages and at then the prompt of the remote Linux machine that is your AWS instance:
+    The terminal will display a few messages and at the end the **prompt** of the **shell running** on your Linux AWS instance:
 
     ~~~
     ...
