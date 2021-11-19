@@ -28,6 +28,10 @@ You'll know you need to start working on the cloud when:
 
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating, but this lesson says '5 minutes or less' so let's get connected.
 
+<div id="imagesrow">
+  <img class="styfigrow" src="../fig/cloud-is-the-internet.png" alt="The Cloud is the Internet" width="300"/>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img class="styfigrow" src="../fig/cloud-interconnected-resources.png" alt="Cloud interconnected resources" width="350"/>
+</div>
 
 ### Choosing a cloud platform
 
