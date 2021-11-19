@@ -51,7 +51,7 @@ To login into your AWS instance for this course, you'll need:
 - the shell/terminal application --- **Windows users** should have already installed the *Git Bash* shell; otherwise follow the directions in the [Setup](../setup)
 - the *secure shell* (**ssh**) application, which is readily available in MacOS, Linux and Windows. **Windows users** will use ssh through Git Bash. 
 
-As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this (you do not have to have this yet):
+As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this (you do not have to type this yet):
 
  ~~~
  $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
@@ -68,7 +68,7 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
 
    In your Desktop, click the right button of the mouse to open the File Explorer/Manager menu, and then left click on New and then on Folder, in Windows, or New Folder in Linux Gnome.
 
-   Name the folder *cloudspan*.
+   Name the folder *cloudspan*
 
    Later you can change the name of the folder and move it somewhere else.
 
@@ -130,7 +130,7 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
 
 2. **Move to the folder you created for the course**
 
-   Once the terminal opens, **you will be** in your **home** folder (directory), which contains all your files and other folders such as the Desktop, Downloads, Documents, etc.
+   Once the terminal opens, **you will be** in your **home folder** (directory), which contains all your files and other typical folders such as the *Desktop*, *Downloads*, *Documents*, etc.
 
    Move to the folder you created by typing the following command and then pressing <kbd>Enter</kbd> at the command prompt:
 
@@ -155,32 +155,29 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
     ~~~
     {: .bash}
 
-    The command `chmod` (change access mode) makes your login key file accessible to you only (and non-accessible to any other potential users of your computer), a condition that is required and checked by the program ssh that you will use next to login to your AWS AMI instance. You will learn about file access permissions later in the course.
+    The command `chmod` (change access mode) makes your login key file accessible to you only (and non-accessible to any other potential users of your computer), a condition that is required and checked by the program `ssh` that you will use next to login to your AWS instance. You will learn about file access permissions later in the course.
 
 ## Login into your instance with ssh
 
-1. Copy and paste the command in the Code box below to your terminal but replace `NN` with the number in your login key file name.
+1. Copy and paste the command in the Code box below to your *terminal*, but **replace** `NN` with the number in your login key file name.
 
     Windows Git Bash users only:
     - **copy** the command the usual Windows way: (1) highlight it with the mouse pointer while pressing the mouse left button and (2) press Ctrl-v (keys Ctrl and v simultaneously).
-    - but **paste** it by pressing the mouse middle button while hovering the mouse pointer over the Git Bash window. (Try with the right button if the middle one doesn't work.)
+    - but **paste** it the Linux/Unix way: by pressing the mouse middle button while hovering the mouse pointer over the Git Bash window. (Try with the right button if the middle button doesn't work.)
 
     ~~~
     $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
     ~~~
     {: .bash}
 
-    *Be sure to replace NN twice.* You can use the left and right arrow keys to move to where NN is.
+    *Be sure to replace* `NN` *twice.* You can use the left and right arrow keys to move to where NN is.
 
-    The **-i** option tells **ssh** the identity file containing the key to send to your AWS instance for it to check that you have access permissions to connect as an **ssh client**. 
+    The `-i` option tells `ssh` the identity file containing the key to send to your AWS instance for it to check that you have access permissions to connect as an *ssh client*. 
 
-    *NB*: **ssh** looks for the identity file in the directory where you are (Desktop/cloudspan that you moved to with the command *cd* above), which is the directory where you downloaded your login key file.  
+    **NB**: `ssh` looks for the identity file in the directory where you are, Desktop/cloudspan (that you moved to with the command `cd` above), which is the same directory wherein you downloaded your login key file.  
 
-    The `-i` option tells ssh the identity file containing the key to send to your AWS instance for it to check you have access to connect as an ssh client. We know the file is in your current working directory (the one you created for the course), and ssh looks for the file in your current working directory because you are only specifying the file name. 
-    
-    If the identity file were somewhere else, we would have had to specify the full path name or a relative path name, which you will learn more about later in the course.  
 
-2. The terminal will display a security message, after you enter the ssh command, *similar* to the one below: 
+2. The terminal will display a security message, after you enter the `ssh` command, *similar* to the one below: 
 
     ~~~
     The authenticity of host 'instance06-gc-cloud-span.aws.york.ac.uk (52.211.132.120)' can't be established.ECDSA key fingerprint is SHA256:8N054prkkCeM4GCDSsa0AUnSQw5ngBQHbOR40FqfqLg.
@@ -198,7 +195,7 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
     ~~~
     {: .output}
 
-    Note that you did not need to give a password to login to your instance - you are using you login-key file for authentication.
+    Note that you did not need to give a password to login to your instance --- you are using your login-key file for authentication.
 
 ## Logging off your cloud instance
 
@@ -219,7 +216,7 @@ Amanda-MacBook-Pro-3 $
 
 ## Subsequent logins to your AWS instance
 
-To login back to your instance, open a terminal, move to the directory you created for the course, and ssh as before:
+To login back to your instance, open a terminal, move to the directory you created for the course, and `ssh` as before:
 
 ~~~ 
 $ cd Desktop/cloudspan
