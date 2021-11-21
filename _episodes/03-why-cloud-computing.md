@@ -72,7 +72,7 @@ The most important thing about the **cloud** is choice - instead of purchasing a
 
 * Access large amounts of computing power on demand
 * Full administrative rights - install anything
-* Use pre-configured "images" (machine snapshot where operating system and software are already installed)
+* Use pre-configured "images" (virtual machine snapshots where operating system and software are already installed)
 * Your local operating system doesn't matter - once you connect to the cloud you can run any UNIX software
 
 **Disadvantages of Cloud Computing**
@@ -80,7 +80,7 @@ The most important thing about the **cloud** is choice - instead of purchasing a
 * It takes time to upload data and download results
 * Cloud computing costs money (you must keep track of your costs)
 * If you need help, you may not have a local system administrator
-* Some resources may be poorly documented, for example: you may not be clear what is installed in a virtual machine or how to use it)
+* Some resources may be poorly documented, for example: you may not be clear what is installed in a virtual machine or how to use it
 * Form of payment (credit card)*
 * Understanding of Amazon's billing and payment (See: [Getting started with AWS Billing and Cost Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-getting-started.html))
 
