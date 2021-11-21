@@ -13,14 +13,14 @@ keypoints:
 ## Background
 "Cloud computing is the on-demand availability of computer system resources \[such as\] data storage and computing power, without direct active management by the user. \[Cloud computing\] relies on a "pay-as-you-go" model ..."\[[Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing)\].
 
-That means we can **rent** computing resources whenever we need them, as many as we need, and pay only for as long as we use them. All we need is access to the Internet and a credit card to start using the Cloud.
+That means we can **rent** computing resources whenever we need them, as many as we need, and pay only for the time we use them. All we need is access to the Internet and a credit card to start using the Cloud.
 
 <div id="imagesrow">
     <img class="styfigrow" src="../fig/cloud-computing-wikipedia.svg.png" alt="Cloud interconnected resources" width="350"/>
  <p><b>Cloud computing offerings: Infrastructe, Platform, Software, .. as a Service (IaaS, PaaS, SaaS, DaaS).</b></p>
 </div>
 
-Renting the computing resources we need (as opposed to buying and setting them up, which is a costly and complex undertaking), enables us to concentrate in our project, whether it is:
+Renting computing resources (as opposed to buying and setting them up, which is a costly and complex undertaking), enables us to concentrate in our project, whether it is:
 - running some research experiments
 - developing a proof of concept for a new product or
 - running a course like this one, where we are providing each student with a virtual machine (PaaS) with all the necessary data and software analysis tools ready to use --- deleting the virtual machines once the course is over.
