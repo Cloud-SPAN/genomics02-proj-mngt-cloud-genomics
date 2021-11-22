@@ -40,7 +40,7 @@ facility. Let's take a look at this [example submission spreadsheet](https://doc
 > If you are attending an instructor-led workshop, discuss these questions in your breakout room:
 > 1. How would you improve the naming of columns and samples?
 > 2. What errors do you see in the data?
-> 3. Are there any types of error that would be difficult to spot? Is there any way you can test these to find thems
+> 3. Are there any types of error that would be difficult to spot? Is there any way you can test these to find them?
 >
 > Nominate someone from your group to summarise your ideas for each question on the Padlet.
 >
